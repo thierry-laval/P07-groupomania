@@ -4,16 +4,15 @@ _`Début de formation le 20/04/2020`_
 
 ### Auteur
 
-👤 **Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<thierrylaval@gmx.com>)
+👤**Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<thierrylaval@gmx.com>)
 
-* Github:  [@Thierry Laval](https://github.com/thierry-laval)
+* Github: [@Thierry Laval](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
-
 ***
-## 📎 Projet 7 - Création d'un réseau social d’entreprise.
+
+## 📎 Projet 7 - Création d'un réseau social d’entreprise
 ![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo-groupomania.png?raw=true)
 ***
-
 Le projet 7 consiste à construire  (Frontend et Backend) un réseau social interne pour les employés de Groupomania.
 Utiliser une organisation “agile”. Carte blanche avec quelques orientations.
 L'un des employés du groupe testera un MVP du produit.
@@ -29,10 +28,9 @@ L'un des employés du groupe testera un MVP du produit.
 # A REVOIR
 ## 🔨 Installation ##
 
-
 ### Pré requis
 
-* Cloner le repository : https://github.com/thierry-laval/groupomania <br>
+* Cloner le repository : <https://github.com/thierry-laval/groupomania>
 * NPM install Node JS doit être installé localement sur la machine ainsi que MySQL
 * Côté backend, plusieurs dépendances npm ont été nécessaires : - Bcrypt - Body-Parser - Express - jsonwebtoken - Multer - Bouncer - Helmet - password validator - Nodemon
 
