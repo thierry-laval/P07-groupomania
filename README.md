@@ -10,73 +10,58 @@ _`Début de formation le 20/04/2020`_
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
 
 ***
-## 📎 Projet 5 - Création de la partie front-end d’un site e-commerce.
-![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo.orinoco.png?raw=true)
+## 📎 Projet 7 - Création d'un réseau social d’entreprise.
+![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo-groupomania.png?raw=true)
 ***
 
-Le sujet du projet 5 du parcours Développeur web chez Openclassrooms porte sur la création d’un site e- commerce pour la partie front-end.<br>
-L'objectif étant de créer un premier MVP pour démontrer le fonctionnement des applications à des investisseurs potentiels.
+Le projet 7 consiste à construire  (Frontend et Backend) un réseau social interne pour les employés de Groupomania.
+Utiliser une organisation “agile”. Carte blanche avec quelques orientations.
+L'un des employés du groupe testera un MVP du produit.
 
 ### Objectifs et Compétences évalué
 
-* Gérer des événements JavaScript
-* Interagir avec un web service avec JavaScript
-* Valider des données issues de sources externes
-* Créer un plan de test pour une application
-
-### Livrables
-
-* 1 -  Le lien vers un dépôt Git public contenant le code de l'application web.
-<br>(Le mentor et l'évaluateur doivent être en mesure de `cloner le référentiel`, `d'ouvrir index.html`, d'utiliser l'application entièrement opérationnelle et de confirmer que n’importe quel input utilisateur est validé.)
-* 2 - Un plan de tests.
+* Gérer un stockage de données à l'aide de SQL
+* Personnaliser le contenu envoyé à un client web
+* Implémenter un stockage de données sécurisé en utilisant SQL
+* Authentifier un utilisateur et maintenir sa session
 
 ***
-
+# A REVOIR
 ## 🔨 Installation ##
 
-Les fichiers du back-end du serveur pour le projet sont présents dans ce répo.
 
-Vous aurez besoin d'avoir `Node` et `npm` installés localement sur votre machine.
+### Pré requis
 
-Clonez ce dépôt: https://github.com/thierry-laval/orinoco
+* Cloner le repository : https://github.com/thierry-laval/groupomania <br>
+* NPM install Node JS doit être installé localement sur la machine ainsi que MySQL
+* Côté backend, plusieurs dépendances npm ont été nécessaires : - Bcrypt - Body-Parser - Express - jsonwebtoken - Multer - Bouncer - Helmet - password validator - Nodemon
 
-À partir du dossier du projet, exécutez`npm install`.
-Vous pouvez ensuite exécuter le serveur avec`node server`.
-Le serveur doit fonctionner en `localhost` avec le port par défaut `3000`.
-localhost:3000
+La sauvegarde de la base de données groupomania_intra.sql doit être importée
 
-Si le serveur fonctionne sur un autre port pour une raison quelconque, cela est imprimé sur la console au démarrage du serveur, par exemple`Listening on port 3001`.
+### Lancement
 
-Pour pouvoir faire tourner ce site en local, vous devez avoir installé un `serveur http` en `local` comme `http- server`.
-Ligne de commande : `npm install --global http-server`.
+Bla Bla Bla...
+***
 
-### 🔨 En résumé, pour faire fonctionner ce site ###
+### Utilisé dans ce projet
 
-* Cloner ce repo
-* Ouvrir le terminal sur le dossier du site
-* Tapez en ligne de commande `node server`
-* Ouvrez index.html (page d'accueil)
+* Voir : [Le projet 7 "Groupomania" sur OpenClassrooms](https://openclassrooms.com/fr/paths/185/projects/677/assignment "Cliquez pour voir le projet")
+* Voir : [La note de cadrage donnée par le client](documents/Groupomania_Specs_FR_DWJ_VF.pdf)
+
+| Languages       | et             | outils                 |
+| :-------------: |:-------------: | :-----:                |
+| HTML5           | Node.js        | Vue.js ou express      |
+| CSS3            | Git/GitHub     | MySQL                  |
+| Java-script     | SASS           |  Visual Studio Code    |
+|       xXx       |       xXx      |        xXx             |
 
 ***
 
-##### Utilisé dans ce projet
+### 🚦Les documents de présentation de la soutenance
 
-* Voir : [Le projet sur OpenClassrooms](https://openclassrooms.com/fr/paths/185/projects/675/assignment "Cliquez pour voir le projet")
-
-
-| Languages       | et                    | outils     |
-| :-------------: |:-------------:        | :-----:    |
-| HTML5           | Node.js              | NPM (Node Package Manager) |
-| CSS3            | Git/GitHub                   | xXx |
-| Java-script              | Sass |  Visual Studio Code    |
-
-***
-
-### 🚦Les documents de présentation
-
-→ [Voir le lien vers le dépot sur Github](https://drive.google.com/file/d/15ZtzxdEgrzaluYqR7x6mV1oZW05IKXhT/view?usp=sharing)\
-→ [Voir le plan de test en ligne](https://drive.google.com/file/d/1YTPd-akGpsQenxagnjSoEQtlFq0F3sIL/view?usp=sharing)\
-→ [Voir l'organigramme en ligne](https://drive.google.com/file/d/1WRYo4M2BiBcE1Orr_zWAwWvL5BGKYDRV/view?usp=sharing)
+→ [Voir le lien vers le dépot sur Github]()\
+→ [Voir le plan de test en ligne]()\
+→ [Voir l'organigramme en ligne]()
 
 ***
 <p>&hearts; Love Markdown<p>
