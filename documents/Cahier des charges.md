@@ -37,15 +37,16 @@
 ## Organisation de travail
 - AGILE
 - Une première version basique (MVP) sera présentée au client
-- Le développement se fera "au fil de l'eau" selon les requêtes du client
+- Le développement se fera selon les requêtes du client
 - L'objectif de ce projet est de créer ce premier MVP
 
 ## Versionning
 - Git et GitHub utilisés
 - Workflow:
 ```bash
-________________________________________  # Branche Master
- \______/____/_________/_______/_____/__  # Branche Development
-  \___/   \_/  \__/\__/  \____/ \_/       # Branches Features
+
+# Branche Master
+# Branche Development
+# Branches Features
 
 ```
