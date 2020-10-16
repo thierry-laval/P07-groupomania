@@ -13,9 +13,13 @@ _`Début de formation le 20/04/2020`_
 ## 📎 Projet 7 - Création d'un réseau social d’entreprise
 ![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo-groupomania-red.png?raw=true)
 
-Le projet 7 consiste à construire  (Frontend et Backend) un réseau social interne pour les employés de Groupomania.
-Utiliser une organisation “agile”. Carte blanche avec quelques orientations.
-L'un des employés du groupe testera un MVP du produit.
+Le projet 7 consiste à construire  (Frontend et Backend) un réseau social interne pour les employés de Groupomania. En utilisant une organisation "agile", nous avons "Carte blanche" avec quelques orientations et contraintes.<br>
+   - Fonction, partager/commenter des gifs genre le site 9GAG.<br>
+   - Fonction, écrire/partager des articles à la façon de Reddit.<br>
+   - Utiliser le langage SQL pour le stockage de données.<br>
+   - Les données de connexion doivent être sécurisées.<br>
+
+L'un des employés du groupe testera un MVP du produit avec une seule des fonctions demandées.
 
 ### Objectifs et Compétences évalué
 
@@ -51,20 +55,16 @@ npm run serve
 ```
 
 ***Pour tester les fonctionnalités de l'app voir les étapes suivantes :***
-* Créez un fichier nommé *.env* dans le dossier back
-> back
->> app.js\
->> **.env**\
->> server.js
-
-Y insérer directement ces 3 variables d'environnements:\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DB_ID=adminP7\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DB_PW=P7Groupomania\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOKEN=Ce_que_vous_voulez
-
+* Créez un fichier nommé *.env* dans le dossier back<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y insérer directement ces 3 variables d'environnements :
+```
+DB_ID=adminP7\
+DDB_PW=P7Groupomania\
+DTOKEN=Ce_que_vous_voulez
+```
 - Puis créez la base de donnée avec le fichier *createDatabse.sql*
 ```
-SOURCE yourPath/createDatabase.sql;
+Dossier source/createDatabase.sql
 ```
 
 
@@ -73,22 +73,24 @@ SOURCE yourPath/createDatabase.sql;
 ### Utilisé dans ce projet
 
 * Voir : [Le projet 7 "Groupomania" sur OpenClassrooms](https://openclassrooms.com/fr/paths/185/projects/677/assignment "Cliquez pour voir le projet")
-* Voir : [La note de cadrage donnée par le client](documents/Groupomania_Specs_FR_DWJ_VF.pdf)
+* Voir : [Les spécifications fonctionnelles donnée par le client](documents/spécifications_fonctionnelles.pdf)
 
 | Languages       | et             | outils                 |
 | :-------------: |:-------------: | :-----:                |
 | HTML5           | Node.js        | Vue.js ou express      |
 | CSS3            | Git/GitHub     | MySQL                  |
-| Java-script     | SASS           |  Visual Studio Code    |
+| Javascript      | SASS           | Visual Studio Code     |
 |       xXx       |       xXx      |        xXx             |
 
 ***
 
 ### 🚦Les documents de présentation de la soutenance
 
-→ [Voir le lien vers le dépot sur Github]()\
-→ [Voir le plan de test en ligne]()\
-→ [Voir l'organigramme en ligne]()
+A remplir + tard<br>
+→ [Voir le livrable vers le dépot Github](Lien vers la feuille du livrable dans le cloud)\
+→ [Voir les spécifications fonctionnelles](mettre le lien vers le plan de test dans le cloud)\
+→ [Voir le cahier des charges en ligne](Lien vers le cahier des charges en pdf dans le cloud)
+→ [Voir l'organigramme de la bd en ligne](Lien vers l'organisation de la base de données MySQL en pdf dans le cloud)
 
 ***
 <p>&hearts; Love Markdown<p>

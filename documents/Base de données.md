@@ -112,6 +112,6 @@ Liste des types de notifications possibles
 
 
 > Pour l'instant la table ne contiendra que 3 lignes:
-> 1 : 'reaction' (pour like/dislike)
-> 2 : 'comment'  (pour un commentaire de publication)
-> 3 : 'answer'   (pour une réponse à un commentaire)
+> * 1 : 'Post'
+> * 2 : 'reaction'
+> * 3 : 'User'
