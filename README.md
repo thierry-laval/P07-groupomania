@@ -14,6 +14,7 @@ _`Début de formation le 20/04/2020`_
 ![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo-groupomania-red.png?raw=true)
 
 Le projet 7 consiste à construire  (Frontend et Backend) un réseau social interne pour les employés de Groupomania. En utilisant une organisation "agile", nous avons "Carte blanche" avec quelques orientations et contraintes.<br>
+
    - Fonction, partager/commenter des gifs genre le site 9GAG.<br>
    - Fonction, écrire/partager des articles à la façon de Reddit.<br>
    - Utiliser le langage SQL pour le stockage de données.<br>
@@ -55,7 +56,8 @@ npm run serve
 ```
 
 ***Pour tester les fonctionnalités de l'app voir les étapes suivantes :***
-* Créez un fichier nommé *.env* dans le dossier back<br>
+
+* Créez un fichier nommé *.env* dans le dossier back.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y insérer directement ces 3 variables d'environnements :
 ```
 DB_ID=adminP7\
@@ -66,8 +68,6 @@ DTOKEN=Ce_que_vous_voulez
 ```
 Dossier source/createDatabase.sql
 ```
-
-
 ***
 
 ### Utilisé dans ce projet
@@ -80,7 +80,7 @@ Dossier source/createDatabase.sql
 | HTML5           | Node.js        | Vue.js ou express      |
 | CSS3            | Git/GitHub     | MySQL                  |
 | Javascript      | SASS           | Visual Studio Code     |
-|       xXx       |       xXx      |        xXx             |
+|       xXx       |       xXx      |       WCAG             |
 
 ***
 
