@@ -75,12 +75,12 @@ Dossier source/createDatabase.sql
 * Voir : [Le projet 7 "Groupomania" sur OpenClassrooms](https://openclassrooms.com/fr/paths/185/projects/677/assignment "Cliquez pour voir le projet")
 * Voir : [Les spécifications fonctionnelles donnée par le client](documents/spécifications_fonctionnelles.pdf)
 
-| Languages       | et             | outils                 |
-| :-------------: |:-------------: | :-----:                |
-| HTML5           | Node.js        | Vue.js ou express      |
-| CSS3            | Git/GitHub     | MySQL                  |
-| Javascript      | SASS           | Visual Studio Code     |
-|       xXx       |       xXx      |       WCAG             |
+| Languages       | et              | outils             |
+| :-------------: |:--------------: | :-----------------:|
+| HTML5           | Node.js         | Git/GitHub         |
+| CSS3            | Vue.js          | Visual Studio Code |
+| SASS            | MAMP/phpMyAdmin | WCAG               |
+| Javascript      | MySQL           |        xXx         |
 
 ***
 
