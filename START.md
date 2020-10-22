@@ -1,14 +1,14 @@
 # GROUPOMANIA
 
-Démarrage
+Démarrage rapide
 
-***Backend:***
+***Back:***
 ```
 npm install
 npm start
 ```
 
-***Frontend:***
+***Front:***
 ```
 npm install
 npm run serve
@@ -24,12 +24,3 @@ TOKEN=Ce_que_vous_voulez
 
 - Puis créez la base de donnée avec le fichier *createDatabse.sql*
 - Se connecter a MySQL
-
-
-
-
-
-
-.text-muted {
-    color: #ff0000!important;
-}

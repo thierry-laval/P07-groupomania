@@ -295,7 +295,7 @@ export default {
 }
 
 .text-muted {
-    color: #ff0000!important;
+    color: #000000!important;
 }
 
 </style>
