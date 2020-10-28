@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss"> // Pour respecter les standarts WCAG je me suis servi du css en modifiant les couleurs
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
