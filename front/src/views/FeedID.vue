@@ -38,11 +38,22 @@
           <span class="sr-only">Supprimer le post</span>
         </template>
         <!-- Fin -->
-        <!-- Gif -->
-        <template v-slot:postGif>
-          <img :src="posts[indexLastPost].gifUrl" class="card-img gif-img" alt="Gif du post" />
+
+        <!-- Afficher les images (gif, jpg, jpeg) dans les posts -->
+        <template v-slot:postGif v-if="posts[indexLastPost].gifUrl.includes('.gif') || posts[indexLastPost].gifUrl.includes('.jpg') || posts[indexLastPost].gifUrl.includes('.jpeg')">
+          <img :src="posts[indexLastPost].gifUrl" class="card-img gif-img" alt="Image du post" />
         </template>
         <!-- Fin -->
+
+        <!-- Afficher les vidéos (mp4) dans les posts -->
+        <template v-slot:postGif v-else-if="posts[indexLastPost].gifUrl.includes('.mp4')">
+        <video width="100%" controls>
+        <source :src="posts[indexLastPost].gifUrl" type="video/mp4">
+        Your browser does not support HTML video.
+        </video>
+        </template>
+        <!-- Fin -->
+
         <!-- User -->
         <template v-slot:userAvatar>
           <img

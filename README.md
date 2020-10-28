@@ -79,8 +79,8 @@ Dossier source/createDatabase.sql
 | :-------------: |:--------------: | :-----------------:|
 | HTML5           | Node.js         | Git/GitHub         |
 | CSS3            | Vue.js          | Visual Studio Code |
-| SASS            | MAMP/phpMyAdmin | WCAG               |
-| Javascript      | MySQL           |        xXx         |
+| Javascript      | Sequel pro      | WCAG               |
+|    xXx          | MySQL           |        xXx         |
 
 ***
 

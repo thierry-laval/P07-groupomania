@@ -41,13 +41,24 @@
             v-on:click="deletePost(post.postID)"
           ></i>
           <span class="sr-only">Supprimer le post</span>
-          <!-- Fin -->
-        </template>
-        <!-- Gif -->
-        <template v-slot:postGif>
-          <img :src="post.gifUrl" class="card-img gif-img" alt="Gif du post" />
         </template>
         <!-- Fin -->
+
+        <!-- Afficher les images (gif, jpg, jpeg) dans les posts -->
+        <template v-slot:postGif v-if="post.gifUrl.includes('.gif') || post.gifUrl.includes('.jpg') || post.gifUrl.includes('.jpeg')">
+          <img :src="post.gifUrl" class="card-img gif-img" alt="Image du post" />
+        </template>
+        <!-- Fin -->
+
+        <!-- Afficher les vidéos (mp4) dans les posts -->
+        <template v-slot:postGif v-else-if="post.gifUrl.includes('.mp4')">
+        <video width="100%" controls>
+        <source :src="post.gifUrl" type="video/mp4">
+        Your browser does not support HTML video.
+        </video>
+        </template>
+        <!-- Fin -->
+
         <!-- User -->
         <template v-slot:userAvatar>
           <img
