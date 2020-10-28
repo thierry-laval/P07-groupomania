@@ -142,4 +142,10 @@ article {
     cursor: pointer;
   }
 }
+.text-muted {
+    color: #000000!important;
+}
+.app nav a.router-link-exact-active {
+    color: #000000;
+}
 </style>

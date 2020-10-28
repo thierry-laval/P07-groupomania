@@ -297,5 +297,13 @@ export default {
 .text-muted {
     color: #000000!important;
 }
-
+.app nav a.router-link-exact-active {
+    color: #000000;
+}
+.input-group-text {
+    color: #000000;
+}
+.custom-file-label::after {
+    color: #000000;
+}
 </style>

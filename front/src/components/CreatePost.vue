@@ -26,7 +26,7 @@
           required
           v-on:change="sendFile($event)"
         />
-        <label class="custom-file-label" for="image">Choisir un Gif</label>
+        <label class="custom-file-label" for="image">Choisir un fichier multimédia</label>
       </div>
       <!-- Fin -->
       <!-- Bouton pour le publier -->
