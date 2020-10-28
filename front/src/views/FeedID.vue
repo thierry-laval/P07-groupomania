@@ -26,7 +26,7 @@
         v-on:reaction-none="sendReaction(posts[indexLastPost].postID, 0)"
         :reaction="posts[indexLastPost].yourReaction"
       >
-        <!-- Bouton délétion post -->
+        <!-- Bouton suppréssion du post -->
         <template v-slot:postDelete v-if="posts[indexLastPost].yourPost > 0">
           <i
             class="fas fa-times"
