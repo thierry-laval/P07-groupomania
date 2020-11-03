@@ -99,9 +99,7 @@ A remplir + tard<br>
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=aY_epIW_x0c
 " target="_blank"><img src="http://img.youtube.com/vi/aY_epIW_x0c/0.jpg" 
-alt="OCR-DevWeb-Projet7" width="240" height="180" border="10" /></a>
-
-<iframe width="1131" height="636" src="https://www.youtube.com/embed/aY_epIW_x0c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+alt="OCR-DevWeb-Projet7" width="240" height="180" border="10" /></a>{:target="_blank" }
 
 ***
 <p>&hearts; Love Markdown<p>
