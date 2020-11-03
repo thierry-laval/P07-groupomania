@@ -95,11 +95,11 @@ A remplir + tard<br>
 → [Voir le livrable vers le dépot Github](Lien vers la feuille du livrable dans le cloud)\
 → [Voir les spécifications fonctionnelles](mettre le lien vers le plan de test dans le cloud)\
 → [Voir le cahier des charges en ligne](Lien vers le cahier des charges en pdf dans le cloud)
-→ [Voir l'organigramme de la bd en ligne](Lien vers l'organisation de la base de données MySQL en pdf dans le cloud)  
+→ [Voir l'organigramme de la bd en ligne](Lien vers l'organisation de la base de données MySQL en pdf dans le cloud)
 
 → Voir la vidéo de présentation
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=aY_epIW_x0c
-" target="_blank" {:target="_blank" }><img src="http://img.youtube.com/vi/aY_epIW_x0c/0.jpg" 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=aY_epIW_x0c" target="_blank"><img src="http://img.youtube.com/vi/aY_epIW_x0c/0.jpg"
 alt="OCR-DevWeb-Projet7" width="240" height="180" border="10" /></a>
 
 ***
