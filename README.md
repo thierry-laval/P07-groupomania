@@ -24,9 +24,6 @@ L'un des employés du groupe testera un MVP du produit avec une seule des deux f
 
    - <span style="color:green">Nous avons choisi de presenter "Pouvoir partager et commenter des gifs".</span>
 
- - <p style='color:green; background-color:yellow;'>Nous avons choisi de presenter "Pouvoir partager et commenter des gifs".</p>
-
-
 ### Objectifs et Compétences évalué
 
 * Gérer un stockage de données à l'aide de SQL
