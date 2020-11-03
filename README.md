@@ -22,7 +22,10 @@ Le projet 7 consiste à construire  (Frontend et Backend) un réseau social inte
 
 L'un des employés du groupe testera un MVP du produit avec une seule des deux fonctions demandées.
 
-   - <span style='color:green'>Nous avons choisi de presenter "Pouvoir partager et commenter des gifs".</span>
+   - <span style="color:green">Nous avons choisi de presenter "Pouvoir partager et commenter des gifs".</span>
+
+ - <p style='color:green; background-color:yellow;'>Nous avons choisi de presenter "Pouvoir partager et commenter des gifs".</p>
+
 
 ### Objectifs et Compétences évalué
 
