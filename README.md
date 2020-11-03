@@ -98,8 +98,8 @@ A remplir + tard<br>
 → [Voir l'organigramme de la bd en ligne](Lien vers l'organisation de la base de données MySQL en pdf dans le cloud)
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=aY_epIW_x0c
-" target="_blank"><img src="http://img.youtube.com/vi/aY_epIW_x0c/0.jpg" 
-alt="OCR-DevWeb-Projet7" width="240" height="180" border="10" /></a>{:target="_blank" }
+" target="_blank">{:target="_blank" }<img src="http://img.youtube.com/vi/aY_epIW_x0c/0.jpg" 
+alt="OCR-DevWeb-Projet7" width="240" height="180" border="10" /></a>
 
 ***
 <p>&hearts; Love Markdown<p>
