@@ -1,14 +1,16 @@
-# GROUPOMANIA
+# GROUPOMANIA - Projet 7 Développeur WEB OpenClassrooms
 
 Démarrage rapide
 
-***Back:***
+Cloner le repo sur votre ordinateur
+
+***Lancer le terminal de commande sur le Back:***
 ```
 npm install
 npm start
 ```
 
-***Front:***
+***Lancer le terminal de commande sur le Front:***
 ```
 npm install
 npm run serve
@@ -24,3 +26,4 @@ TOKEN=Ce_que_vous_voulez
 
 - Puis créez la base de donnée avec le fichier *createDatabse.sql*
 - Se connecter a MySQL
+- Lancer l'application sur le port indiqué (localhost:8080)

@@ -10,7 +10,7 @@ const multer = require('multer');
 // Donc la creation d'un objet pour ajouter une extention en fonction du type mime du ficher
 const MIME_TYPES = {
   'image/jpg': 'jpg',
-  'image/jpeg': 'jpg',
+  'image/jpeg': 'jpeg',
   'image/png': 'png',
   'image/gif': 'gif',
   'video/mp4': 'mp4'

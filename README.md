@@ -20,7 +20,9 @@ Le projet 7 consiste à construire  (Frontend et Backend) un réseau social inte
    - Utiliser le langage SQL pour le stockage de données.<br>
    - Les données de connexion doivent être sécurisées.<br>
 
-L'un des employés du groupe testera un MVP du produit avec une seule des fonctions demandées.
+L'un des employés du groupe testera un MVP du produit avec une seule des deux fonctions demandées.
+
+   - <FONT color="green"> Nous avons choisi de presenter "Pouvoir partager et commenter des gifs".</FONT>
 
 ### Objectifs et Compétences évalué
 
@@ -36,8 +38,9 @@ L'un des employés du groupe testera un MVP du produit avec une seule des foncti
 ### Pré requis
 
 * Cloner le repository : <https://github.com/thierry-laval/groupomania>
-* NPM install Node JS doit être installé localement sur la machine ainsi que MySQL
-* Côté backend, plusieurs dépendances npm ont été nécessaires : - Bcrypt - Body-Parser - Express - jsonwebtoken - Multer - Bouncer - Helmet - password validator - Nodemon
+* Installer Node.js
+* Installer Vue.js
+* Installer MySQL
 
 La sauvegarde de la base de données ***createDatabase.sql*** doit être importée
 
@@ -55,7 +58,7 @@ npm install (1 seule fois pour l'installation)
 npm run serve
 ```
 
-***Pour tester les fonctionnalités de l'app voir les étapes suivantes :***
+***Pour tester les fonctionnalités de l'application voir les étapes suivantes :***
 
 * Créez un fichier nommé *.env* dans le dossier back.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y insérer directement ces 3 variables d'environnements :
@@ -69,6 +72,8 @@ DTOKEN=Ce_que_vous_voulez
 Dossier source/createDatabase.sql
 ```
 ***
+
+* Ouvrez votre navigateur et allez sur : `http://localhost:8080/`
 
 ### Utilisé dans ce projet
 
