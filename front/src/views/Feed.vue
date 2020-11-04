@@ -1,4 +1,5 @@
-<!-- VIEW FEED - Page principale contenant la navigation, la création d'un post et les posts -->
+<!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
+<!-- VIEW FEED - Page principale avec la navigation, la création et les posts -->
 
 <template>
   <div>

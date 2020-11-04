@@ -1,4 +1,5 @@
-<!-- VIEW FEEDID - Page d'un post en particulier contenant la navigation, le post et ses commentaires -->
+<!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
+<!-- VIEW FEEDID - Page d'un post avec la navigation, le post et ses commentaires -->
 
 <template>
   <div>

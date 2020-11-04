@@ -1,4 +1,4 @@
-<!-- COMPONENT COMMENT - Commentaires -->
+<!-- COMPONENT COMMENT - Les commentaires et réactions -->
 
 <template>
   <article class="mb-3">

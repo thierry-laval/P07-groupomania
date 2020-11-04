@@ -1,4 +1,5 @@
-<!-- VIEW SIGNUP - Page de signup -->
+<!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
+<!-- VIEW SIGNUP - Page de connexion -->
 
 <template>
   <div class="container-fluid">
