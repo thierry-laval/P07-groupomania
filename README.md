@@ -87,12 +87,12 @@ Dossier source/Groupomania.sql
 
 * Pour les tests, j'ai inclus quelques utilisateurs et publications, pour ne pas arriver sur un réseau social vide... Se connecter avec le login :
 
-|               email           | mot de passe |
-|:---------------------------- :|:------------:|
-| thierrylaval@egroupomania.com |  Password1   |
-| audrey@groupomania.com        |  Password2   |
+| email                         | Mot de passe    |
+| :-------------:               |:--------------: |
+| thierrylaval@egroupomania.com | Password1       |
+| audrey@groupomania.com        | Password2       |
 
-* Ouvrez votre navigateur et allez sur : `http://localhost:8080/`
+* Ouvrez votre navigateur et allez sur : [`http://localhost:8080`](http://localhost:8080)
 
 ***
 
@@ -112,7 +112,6 @@ Dossier source/Groupomania.sql
 
 ### 🚦Les documents de présentation de la soutenance
 
-A remplir + tard<br>
 → [Voir le livrable vers le dépot Github](https://drive.google.com/file/d/1uRs-CGkFYUx9aoAnSZMdF7mUoGSN-t35/view?usp=sharing)\
 → [Voir les spécifications fonctionnelles](https://drive.google.com/file/d/1ogmYbvEXu72UdZ3kIGqS7rJgWEMv30YE/view?usp=sharing)\
 → [Voir le cahier des charges](https://drive.google.com/file/d/1dLUPhbu7G1aJtyz3LPYVS6XStUyvMCpL/view?usp=sharing)\
