@@ -50,7 +50,7 @@ La sauvegarde de la base de données ***createDatabase.sql*** doit être import�
 
 * Dans le terminal, lancer les commandes suivantes sur chaques dossiers :
 
-|![icon](https://www.google.com/url?sa=i&url=https%3A%2F%2Fkorben.info%2Fhyper-un-terminal-entierement-customisable-selon-vos-envies-et-besoins.html&psig=AOvVaw3kl1CIIDf3COpDb5_ldtIz&ust=1604765258936000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD7-Mum7uwCFQAAAAAdAAAAABAF)|Pour installer Node|Pour lancer le serveur|
+|![icon](https://github.com/thierry-laval/archives/blob/master/images/terminal2.gif)|Pour installer Node|Pour lancer le serveur|
 |-:|:-|:-|
 |&ensp;&ensp;&ensp;**Backend :**|```npm install```|```npm start```|
 |&ensp;&ensp;&ensp;**Frontend :**|```npm install```|```npm run serve```|
