@@ -75,11 +75,9 @@ Dossier source/createDatabase.sql
 ```
 Dossier source/Groupomania.sql
 ```
-
-***
-
 * Ouvrez votre navigateur et allez sur : `http://localhost:8080/`
 
+***
 ### Utilisé dans ce projet
 
 * Voir : [Le projet 7 "Groupomania" sur OpenClassrooms](https://openclassrooms.com/fr/paths/185/projects/677/assignment "Cliquez pour voir le projet")
