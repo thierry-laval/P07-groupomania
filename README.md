@@ -1,4 +1,4 @@
-# ![left 100%](https://github.com/thierry-laval/archives/blob/master/images/Logo_OpenClassrooms.png?raw=true) OpenClassrooms-Développeur Web
+# ![left 100%](https://github.com/thierry-laval/archives/blob/master/images/Logo_OpenClassrooms.png?raw=true) [OpenClassrooms-Développeur Web](https://openclassrooms.com/fr/paths/185-developpeur-web)
 
 _`Début de formation le 20/04/2020`_
 
@@ -61,7 +61,7 @@ npm run serve
 ***Pour tester les fonctionnalités de l'application voir les étapes suivantes :***
 
 * Créez un fichier nommé *.env* dans le dossier back.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y insérer directement ces 3 variables d'environnements :
+  - Y insérer directement ces 3 variables d'environnements :
 ```
 DB_ID=adminP7\
 DDB_PW=P7Groupomania\
@@ -71,10 +71,15 @@ DTOKEN=Ce_que_vous_voulez
 ```
 Dossier source/createDatabase.sql
 ```
-- Ou utiliser la bas de donnée avec les exemples *Groupomania.sql*
+- Ou utiliser la base de donnée avec les exemples *Groupomania.sql*<br>
 ```
 Dossier source/Groupomania.sql
 ```
+- J'ai inclus quelques utilisateurs et publications, pour ne pas arriver sur un réseau social vide...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pour les tests, se connecter aux utilisateurs avec le login :<br>
+    - " thierrylaval@egroupomania.com " - Mot de passe : Password1<br>
+    - " audrey@groupomania.com " - Mot de passe : Password2<br>
+
 * Ouvrez votre navigateur et allez sur : `http://localhost:8080/`
 
 ***
@@ -95,12 +100,15 @@ Dossier source/Groupomania.sql
 ### 🚦Les documents de présentation de la soutenance
 
 A remplir + tard<br>
-→ [Voir le livrable vers le dépot Github](Lien vers la feuille du livrable dans le cloud)\
-→ [Voir les spécifications fonctionnelles](mettre le lien vers le plan de test dans le cloud)\
-→ [Voir le cahier des charges en ligne](Lien vers le cahier des charges en pdf dans le cloud)
+→ [Voir le livrable vers le dépot Github](https://drive.google.com/file/d/1uRs-CGkFYUx9aoAnSZMdF7mUoGSN-t35/view?usp=sharing)\
+→ [Voir les spécifications fonctionnelles](https://drive.google.com/file/d/1ogmYbvEXu72UdZ3kIGqS7rJgWEMv30YE/view?usp=sharing)\
+→ [Voir le cahier des charges](https://drive.google.com/file/d/1dLUPhbu7G1aJtyz3LPYVS6XStUyvMCpL/view?usp=sharing)\
+→ [Voir l'organisation de la base de données MySQL](https://drive.google.com/file/d/1SNtf7pPg3a2kWflZROxpeMX-NJnrykRu/view?usp=sharing)\
+→ [Voir le guide de construction de l'API](https://drive.google.com/file/d/1QzZhmv7O77IIF2w31jnmaJLWrVmVJupB/view?usp=sharing)\
 → [Voir l'organigramme de la bd en ligne](Lien vers l'organisation de la base de données MySQL en pdf dans le cloud)
 
 → **Voir la vidéo de présentation**
+* Cette vidéo décrit rapidement les fonctionnalités de l'application vue par les utilisateurs.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=kXClhebVLUw" target="_blank"><img src="http://img.youtube.com/vi/kXClhebVLUw/0.jpg"
 alt="OCR-DevWeb-Projet7" width="240" height="180" border="10" /></a>
