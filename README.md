@@ -85,7 +85,9 @@ Dossier source/createDatabase.sql
 Dossier source/Groupomania.sql
 ```
 
-* Pour les tests, j'ai inclus quelques utilisateurs et publications, pour ne pas arriver sur un réseau social vide... Se connecter avec le login :
+&nbsp;&nbsp;&nbsp;&nbsp;Utilisateurs et publications inclus pour les tests.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se connecter avec le login :
 
 | email                         | Mot de passe    |
 | :-------------:               |:--------------: |
@@ -127,4 +129,4 @@ Dossier source/Groupomania.sql
 
 ***
 
-&hearts; Love Markdown
+&hearts;&nbsp;&nbsp;&nbsp;&nbsp;Love Markdown
