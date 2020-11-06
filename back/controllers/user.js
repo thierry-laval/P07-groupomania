@@ -31,7 +31,7 @@ exports.signup = (req, res, next) => {
 }
 // FIN MIDDLEWARE
 
-// MIDDLEWARE LOGIN
+// MIDDLEWARE LOGIN avec vérification de l'email unique
 exports.login = (req, res, next) => {
     const email = req.body.email;
     const password = req.body.password;
