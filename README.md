@@ -44,13 +44,13 @@ L'un des employés du groupe testera un MVP du produit avec une seule des deux f
 * Installer Vue.js
 * Installer MySQL
 
-La sauvegarde de la base de données ***createDatabase.sql*** doit être importée
+La sauvegarde de la base de données ```***createDatabase.sql***``` doit être importée
 
 ### Lancement du Backend et Frontend
 
 * Dans le terminal, lancer les commandes suivantes sur chaques dossiers :
 
-|![icon du terminal](https://github.com/thierry-laval/archives/blob/master/images/terminal2.gif?raw=true)|Pour installer Node|Pour lancer le serveur|
+|![icon du terminal](https://github.com/thierry-laval/archives/blob/master/images/terminal2.gif?raw=true)|Pour installer Node<br>Une seule fois|Pour lancer le serveur|
 |:-:|:-:|:-:|
 |Sur le dossier **Back** :|```npm install```|```npm start```|
 |Sur le dossier **Front** :|```npm install```|```npm run serve```|
