@@ -48,19 +48,12 @@ La sauvegarde de la base de données ***createDatabase.sql*** doit être import�
 
 ### Lancement du Backend et Frontend
 
-***Backend:***
+* Dans le terminal, lancer les commandes suivantes sur chaques dossiers :
 
-```bash
-npm install (1 seule fois)
-npm start
-```
-
-***Frontend:***
-
-```bash
-npm install (1 seule fois)
-npm run serve
-```
+|![icon](https://www.google.com/url?sa=i&url=https%3A%2F%2Fkorben.info%2Fhyper-un-terminal-entierement-customisable-selon-vos-envies-et-besoins.html&psig=AOvVaw3kl1CIIDf3COpDb5_ldtIz&ust=1604765258936000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPD7-Mum7uwCFQAAAAAdAAAAABAF)|Pour installer Node|Pour lancer le serveur|
+|-:|:-|:-|
+|&ensp;&ensp;&ensp;**Backend :**|```npm install```|```npm start```|
+|&ensp;&ensp;&ensp;**Frontend :**|```npm install```|```npm run serve```|
 
 ***Pour tester les fonctionnalités de l'application voir les étapes suivantes :***
 
@@ -130,3 +123,16 @@ Dossier source/Groupomania.sql
 ***
 
 &hearts;&nbsp;&nbsp;&nbsp;&nbsp;Love Markdown
+
+
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+Dans le terminal lancer les commandes suivantes :
+||Pour installer Node|Pour lancer le serveur|
+|-:|:-|:-|
+|&ensp;&ensp;&ensp;**Backend :**|```npm install```|```npm start```|
+|&ensp;&ensp;&ensp;**Frontend :**|```npm install```|```npm run serve```|
+
+| | | |
+|-|-|-|
+|  | _"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."_ | |
+|
