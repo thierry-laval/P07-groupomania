@@ -1,12 +1,9 @@
-# Organisation de la base de données MySQL
+# Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
 
-
-A MODIFIER
-
-
+## Organisation de la base de données MySQL
 
 -------------------------------------------------------------------------------------------------
-## Users
+### Users
 Liste des utilisateurs
 
 | Field         | Type           | Null | Key                        | Autre                     |
@@ -26,7 +23,7 @@ Liste des utilisateurs
 
 
 -------------------------------------------------------------------------------------------------
-## Posts
+### Posts
 Liste des publications
 
 | Field            | Type           | Null | Key                         | Autre                     |
@@ -46,7 +43,7 @@ Liste des publications
 
 
 -------------------------------------------------------------------------------------------------
-## Comments
+### Comments
 Liste des commentaires des publications
 
 | Field            | Type           | Null | Key                        | Autre                     |
@@ -64,7 +61,7 @@ Liste des commentaires des publications
 
 
 -------------------------------------------------------------------------------------------------
-## Likes
+### Likes
 Liste des likes / dislikes des publications
 
 | Field         | Type           | Null | Key                        | Autre                     |
@@ -80,7 +77,7 @@ Liste des likes / dislikes des publications
 
 
 -------------------------------------------------------------------------------------------------
-## Notifications
+### Notifications
 Liste des notifications.
 Il y aura une notification si :
   - qqn like/dislique un post du user
@@ -102,15 +99,14 @@ Il y aura une notification si :
 
 
 -------------------------------------------------------------------------------------------------
-## Notification_types
+### Notification_types
 Liste des types de notifications possibles
 
 | Field         | Type           | Null | Key                        | Autre                     |
 | ------------- | -------------- | ---- | -------------------------- | ------------------------- |
 | id            | TINYINT        | NO   | PRIMARY                    | auto_increment ; unsigned |
 | name          | VARCHAR(10)    | NO   | -                          | -                         |
-
-
+-------------------------------------------------------------------------------------------------
 > Pour l'instant la table ne contiendra que 3 lignes:
 > * 1 : 'Post'
 > * 2 : 'reaction'
