@@ -71,6 +71,11 @@ DTOKEN=Ce_que_vous_voulez
 ```
 Dossier source/createDatabase.sql
 ```
+- Ou utiliser la bas de donnée avec les exemples *Groupomania.sql*
+```
+Dossier source/Groupomania.sql
+```
+
 ***
 
 * Ouvrez votre navigateur et allez sur : `http://localhost:8080/`
