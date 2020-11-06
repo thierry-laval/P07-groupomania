@@ -50,10 +50,10 @@ La sauvegarde de la base de données ***createDatabase.sql*** doit être import�
 
 * Dans le terminal, lancer les commandes suivantes sur chaques dossiers :
 
-|![icon](https://github.com/thierry-laval/archives/blob/master/images/terminal2.gif)|Pour installer Node|Pour lancer le serveur|
-|-:|:-|:-|
-|&ensp;&ensp;&ensp;**Backend :**|```npm install```|```npm start```|
-|&ensp;&ensp;&ensp;**Frontend :**|```npm install```|```npm run serve```|
+|![icon du terminal](https://github.com/thierry-laval/archives/blob/master/images/terminal2.gif?raw=true)|Pour installer Node|Pour lancer le serveur|
+|:-:|:-:|:-:|
+|Sur le dossier **Back** :|```npm install```|```npm start```|
+|Sur le dossier **Front** :|```npm install```|```npm run serve```|
 
 ***Pour tester les fonctionnalités de l'application voir les étapes suivantes :***
 
@@ -123,16 +123,3 @@ Dossier source/Groupomania.sql
 ***
 
 &hearts;&nbsp;&nbsp;&nbsp;&nbsp;Love Markdown
-
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-Dans le terminal lancer les commandes suivantes :
-||Pour installer Node|Pour lancer le serveur|
-|-:|:-|:-|
-|&ensp;&ensp;&ensp;**Backend :**|```npm install```|```npm start```|
-|&ensp;&ensp;&ensp;**Frontend :**|```npm install```|```npm run serve```|
-
-| | | |
-|-|-|-|
-|  | _"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."_ | |
-|
