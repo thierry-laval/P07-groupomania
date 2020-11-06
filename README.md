@@ -57,8 +57,8 @@ La sauvegarde de la base de données ```***createDatabase.sql***``` doit être i
 
 ***Pour tester les fonctionnalités de l'application voir les étapes suivantes :***
 
-* Créez un fichier nommé *.env* dans le dossier back.
-  * Insérer directement ces 3 variables d'environnements :
+* Créez un fichier nommé **```.env```** dans le dossier back.
+  * Insérer directement ces 3 variables d'environnements
 
 ```bash
 DB_ID=adminP7\
@@ -66,13 +66,13 @@ DDB_PW=P7Groupomania\
 DTOKEN=Ce_que_vous_voulez
 ```
 
-* Puis créez la base de donnée avec le fichier *createDatabse.sql*
+* Puis créez la base de données avec le fichier **createDatabse.sql**
 
 ```bash
 Dossier source/createDatabase.sql
 ```
 
-* Ou utiliser la base de donnée avec les exemples *Groupomania.sql*
+* Ou utiliser la base de données avec les exemples **Groupomania.sql**
 
 ```bash
 Dossier source/Groupomania.sql
