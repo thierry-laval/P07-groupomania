@@ -44,7 +44,7 @@ L'un des employés du groupe testera un MVP du produit avec une seule des deux f
 * Installer Vue.js
 * Installer MySQL
 
-La sauvegarde de la base de données ```***createDatabase.sql***``` doit être importée
+La sauvegarde de la base de données ```createDatabase.sql```doit être importée
 
 ### Lancement du Backend et Frontend
 
