@@ -122,7 +122,7 @@ Dossier source/Groupomania.sql
 
 → **Liste des dépendances et documentation**
 
-| Liste des dépendances                                            |  et documentations                                                        |
+|                                         |                                                       |
 |------------------------------------------------------------------|---------------------------------------------------------------------------|
 | express : [d​ocumentation](https://www.npmjs.com/package/express) | sequelize : ​[d​ocumentation](https://www.npmjs.com/package/sequelize)      |
 | bcrypt : [d​ocumentation](https://www.npmjs.com/package/bcrypt)   | sonwebtoken : [d​ocumentation](https://www.npmjs.com/package/jsonwebtoken) |
