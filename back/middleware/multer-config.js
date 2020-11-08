@@ -6,7 +6,7 @@ const multer = require('multer');
 // FIN MODULES
 
 // DICTIONNAIRE TYPE MIME
-// On crée un dictionnaire des types MIME pour définire le format des images
+// On crée un dictionnaire des types MIME pour définire le format des images autorisées
 // Donc la creation d'un objet pour ajouter une extention en fonction du type mime du ficher
 const MIME_TYPES = {
   'image/jpg': 'jpg',
@@ -32,9 +32,9 @@ const storage = multer.diskStorage({ // Configure multer
   filename: (req, file, callback) => { // Indique le nom du fichier
 
     // On génère un nouveau nom avec le nom d'origine, on supprime les espaces (white space avec split) et on insère des underscores à la place
-    let name = file.originalname.split(' ').join('_'); // Retire les potentiels espaces
+    let name = file.originalname.split(' ').join('_'); // Pour éliminer les éventuelles espaces du nom d'origine
     let extension = MIME_TYPES[file.mimetype]; // Défini le type
-    name = name.replace("." + extension, "_");
+    name = name.replace("." + extension, "_"); // création du nom final
 
     // On appelle le callback, on passe null pour dire qu'il n'y a pas d'erreur
     // et on crée le filename en entier, on ajoute un timestamp, un point et enfin l'extension du fichier
@@ -43,6 +43,7 @@ const storage = multer.diskStorage({ // Configure multer
 });
 // FIN FONCTION
 
+// Export de l'élément multer, seuls les fichiers de type image seront gérés
 module.exports = multer({
   storage: storage
 }).single('image');

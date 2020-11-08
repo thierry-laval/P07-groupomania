@@ -5,7 +5,7 @@ const mysql = require('../dbConnect').connection;
 const fs = require("fs"); // Permet de gérer les fichiers stockés
 // FIN MODULES
 
-// MIDDLEWARE GETALLPOSTS
+// MIDDLEWARE GETALLPOSTS pour obtenir tous les messages
 exports.getAllPosts = (req, res, next) => {
     const userID = res.locals.userID;
 
@@ -29,7 +29,7 @@ exports.getAllPosts = (req, res, next) => {
 }
 // FIN MIDDLEWARE
 
-// MIDDLEWARE GETONEPOST
+// MIDDLEWARE GETONEPOST pour obtenir un message
 exports.getOnePost = (req, res, next) => {
     const userID = res.locals.userID;
     const postID = req.params.id;
@@ -54,7 +54,7 @@ exports.getOnePost = (req, res, next) => {
 }
 // FIN MIDDLEWARE
 
-// MIDDLEWARE CREATEPOST
+// MIDDLEWARE CREATEPOST pour céer les messages
 exports.createPost = (req, res, next) => {
     const userID = res.locals.userID;
     const legend = req.body.legend;
@@ -76,7 +76,7 @@ exports.createPost = (req, res, next) => {
 }
 // FIN MIDDLEWARE
 
-// MIDDLEWARE DELETEPOST
+// MIDDLEWARE DELETEPOST pour supprimer les messages
 exports.deletePost = (req, res, next) => {
     const postID = req.params.id;
     const userID = res.locals.userID;
@@ -115,7 +115,7 @@ exports.deletePost = (req, res, next) => {
 }
 // FIN MIDDLEWARE
 
-// MIDDLEWARE CREATECOMMENT
+// MIDDLEWARE CREATECOMMENT pour créer des commentaires
 exports.createComment = (req, res, next) => {
     const postID = req.params.id;
     const userID = res.locals.userID;
@@ -135,7 +135,7 @@ exports.createComment = (req, res, next) => {
 }
 // FIN MIDDLEWARE
 
-// MIDDLEWARE REACTPOST
+// MIDDLEWARE REACTPOST pour créer une réaction sur les messages
 exports.reactPost = (req, res, next) => {
     const userID = res.locals.userID;
     const reaction = req.body.reaction;

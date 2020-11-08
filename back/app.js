@@ -13,6 +13,7 @@ const bodyParser = require('body-parser');
 // On donne accès au chemin de notre système de fichier
  // Plugin qui sert dans l'upload des images et permet de travailler avec les répertoires et chemin de fichier
 const path = require("path");
+
 // utilisation du module 'helmet' pour la sécurité en protégeant l'application de certaines vulnérabilités
 // il sécurise nos requêtes HTTP, sécurise les en-têtes, contrôle la prélecture DNS du navigateur, empêche le détournement de clics
 // et ajoute une protection XSS mineure et protège contre le reniflement de TYPE MIME
@@ -29,17 +30,22 @@ const postRoutes = require("./routes/post");
 // FIN IMPORTATIONS
 
 // HELMET
+// Plugin qui permet de protéger l'application de certaines vulnérabilités en configurant de manière appropriée des en-têtes HTTP.
+//protection contre les attaques de type cross-site scripting et autres injections intersites
+//Protection coontre les attaques de sniffing et clickjacking
+
 app.use(helmet()); // Protège l'app en paramétrant des Headers (notamment contre les failles XSS)
 // FIN HELMET
 
 // PARAMETRAGE DES HEADERS
 // Middleware Header pour contourner les erreurs en débloquant certains systèmes de sécurité CORS, afin que tout le monde puisse faire des requetes depuis son navigateur
+
 app.use((req, res, next) => { // Evite les erreurs CORS
-    // on indique que les ressources peuvent être partagées depuis n'importe quelle origine
+// on indique que les ressources peuvent être partagées depuis n'importe quelle origine
     res.setHeader('Access-Control-Allow-Origin', '*');
-    // on indique les entêtes qui seront utilisées après la pré-vérification cross-origin afin de donner l'autorisation
+// on indique les entêtes qui seront utilisées après la pré-vérification cross-origin afin de donner l'autorisation
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
-      // on indique les méthodes autorisées pour les requêtes HTTP
+// on indique les méthodes autorisées pour les requêtes HTTP
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
   });
