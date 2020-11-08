@@ -14,5 +14,4 @@ exports.connection = mysql.createPool({
     timezone : 'local',
     charset : 'utf8mb4'
   });
-
 // FIN CONNEXION

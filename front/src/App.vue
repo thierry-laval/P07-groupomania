@@ -1,7 +1,5 @@
 <!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
 
-<!-- c'est le fichier principal qui englobe tous les composants de l’application qui permettent respectivement de mettre du code HTML, le code JavaScript et le code CSS -->
-
 <template>
   <div id="app">
     <div class="container-fluid container-md">

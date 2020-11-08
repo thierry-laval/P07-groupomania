@@ -1,7 +1,7 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
 
 // MODULES
-const mysql = require('../dbConnect').connection;
+const mysql = require('../dbConnect').connection; //Connexion à la bd
 const env = require("../environment"); // Récupère les variables d'environnement
 const bcrypt = require('bcrypt'); // Pour crypter le mot de passe
 const jwt = require("jsonwebtoken"); // Génère un token sécurisé
@@ -33,8 +33,6 @@ exports.signup = (req, res, next) => {
 }
 // FIN MIDDLEWARE
 
-//Vérifie si l'utilisateur existe dans la base MySQL lors du login, si oui il vérifie son mot de passe,
-//s'il est bon il renvoie un TOKEN content l'id de l'utilisateur, sinon il renvoie une erreur
 
 // MIDDLEWARE LOGIN avec vérification de l'email unique
 exports.login = (req, res, next) => {
@@ -57,11 +55,6 @@ exports.login = (req, res, next) => {
                 if (!valid) {
                     return res.status(401).json({ error: "Mot de passe incorrect !" });
                 }
-//si le mot de passe est correct, création du token de session avec code de salage protégé par token et expiration sur 24h
-        //Le serveur backend renvoie un token au frontend
-        //Encode un nouveau token avec une chaine de développement temporaire
-        //Encodage de l'userdID nécéssaire dans le cas où une requête transmettrait un userId (ex: modification d'un post)
-        // Clé d'encodage du token pouvant être rendue plus complexe en production
                 res.status(200).json({
                     token: jwt.sign(
                         { userID: result[0].userID },

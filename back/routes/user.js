@@ -1,16 +1,11 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
 
-// Contient les fonctions qui s'appliquent aux différentes routes pour les utilisateurs
-
-// MODULES
-// On a besoin d'Express
+// MODULES - Routeur Express
 const express = require("express");
-// On crée un router avec la méthode mise à disposition par Express
 const router = express.Router();
 // FIN MODULES
 
-// IMPORTATION USER CONTROLLERS
-// On associe les fonctions aux différentes routes, on importe le controller
+// IMPORTATION USER CONTROLLERS - Importe le controller
 const userCtrl = require("../controllers/user");
 // FIN IMPORTATION
 

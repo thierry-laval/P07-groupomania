@@ -1,6 +1,6 @@
 <!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
 
-<!-- COMPONENT CREATEPOST - Création d'un post -->
+<!-- COMPONENT CREATEPOST - Composants de la création d'un post -->
 
 <template>
   <div class="mb-4">
