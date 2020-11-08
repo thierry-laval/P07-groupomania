@@ -31,8 +31,8 @@ const postRoutes = require("./routes/post");
 
 // HELMET
 // Plugin qui permet de protéger l'application de certaines vulnérabilités en configurant de manière appropriée des en-têtes HTTP.
-//protection contre les attaques de type cross-site scripting et autres injections intersites
-//Protection coontre les attaques de sniffing et clickjacking
+// protection contre les attaques de type cross-site scripting et autres injections intersites
+// Protection coontre les attaques de sniffing et clickjacking
 
 app.use(helmet()); // Protège l'app en paramétrant des Headers (notamment contre les failles XSS)
 // FIN HELMET
@@ -72,4 +72,5 @@ app.use("/api/post", postRoutes);
 // FIN ROUTES
 
 // Export de l'application express pour déclaration dans server.js
+
 module.exports = app;

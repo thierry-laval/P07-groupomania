@@ -1,4 +1,5 @@
 <!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
+
 <!-- COMPONENT NAVFEED - Nav et Header des pages principales -->
 
 <template>

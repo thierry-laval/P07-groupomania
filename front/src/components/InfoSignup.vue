@@ -1,4 +1,5 @@
 <!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
+
 <!-- COMPONENT INFOSIGNUP - Infos à renseigner pour s'inscrire -->
 
 <template>

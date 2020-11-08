@@ -1,4 +1,5 @@
 <!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
+
 <!-- COMPONENT COMMENT - Les commentaires et réactions -->
 
 <template>

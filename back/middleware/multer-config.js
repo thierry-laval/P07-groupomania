@@ -44,6 +44,7 @@ const storage = multer.diskStorage({ // Configure multer
 // FIN FONCTION
 
 // Export de l'élément multer, seuls les fichiers de type image seront gérés
+
 module.exports = multer({
   storage: storage
 }).single('image');

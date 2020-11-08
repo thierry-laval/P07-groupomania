@@ -1,4 +1,5 @@
 <!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
+
 <!-- VIEW PROFILE - Page des profils -->
 
 <template>

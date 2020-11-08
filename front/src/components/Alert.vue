@@ -1,4 +1,5 @@
 <!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
+
 <!-- COMPONENT ALERT - Les posts et commentaires crées, supprimés et les tentatives de connexion -->
 
 <template>

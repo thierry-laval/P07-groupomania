@@ -1,4 +1,5 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
+
 /**
  * @name : groupomania
  * @create : 5/10/2020

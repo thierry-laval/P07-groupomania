@@ -24,4 +24,5 @@ module.exports = (req, res, next) => { // Vérifie si le token est bon
         res.status(401).json({message: 'Requête non authentifiée !'});
     }
 };
+
 // FIN MIDDLEWARE

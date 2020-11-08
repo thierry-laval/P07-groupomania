@@ -1,4 +1,5 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
+
 // Pour la configuration des routes
 
 import Vue from 'vue'
