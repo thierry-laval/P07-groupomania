@@ -120,7 +120,7 @@ Dossier source/Groupomania.sql
 
 [![OpenClassrooms Projet 7](http://img.youtube.com/vi/kXClhebVLUw/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=kXClhebVLUw "Visionnez sur YouTube")
 
-→ **Liste des dépendances et documentation**
+→ **Liste des dépendances et documentations**
 |                                         |                                                       |
 |------------------------------------------------------------------|---------------------------------------------------------------------------|
 | express : [d​ocumentation](https://www.npmjs.com/package/express)  | sequelize   : ​[d​ocumentation](https://www.npmjs.com/package/sequelize)   |
