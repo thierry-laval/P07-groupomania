@@ -6,7 +6,9 @@ import App from './App.vue'
 import router from './router'
 
 // IMPORT AXIOS ET CONFIGURATION
-//Axios est une bibliothèque JavaScript fonctionnant comme un client HTTP. Elle permet de communiquer avec des API en utilisant des requêtes. Comme avec les autres clients HTTP, il est possible de créer des requêtes avec la méthode POST.
+//Axios est une bibliothèque JavaScript fonctionnant comme un client HTTP.
+//Elle permet de communiquer avec des API en utilisant des requêtes.
+//Comme avec les autres clients HTTP, il est possible de créer des requêtes avec la méthode POST.
 import axios from "axios";
 axios.defaults.baseURL = 'http://localhost:3000/api/';
 const token = sessionStorage.getItem('token')

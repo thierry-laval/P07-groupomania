@@ -1,4 +1,6 @@
-// MODULES ......EXPLIQUER
+// Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
+
+// MODULES - Cette librairie permet de charger des variables d’environnement définies dans un fichier texte
 const dotenv = require("dotenv").config();
 // FIN MODULES
 

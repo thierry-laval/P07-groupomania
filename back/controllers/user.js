@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
+
 // MODULES
 const mysql = require('../dbConnect').connection;
 const env = require("../environment"); // Récupère les variables d'environnement

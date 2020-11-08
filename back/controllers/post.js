@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
+
 // MODULES
 const mysql = require('../dbConnect').connection;
 const fs = require("fs"); // Permet de gérer les fichiers stockés

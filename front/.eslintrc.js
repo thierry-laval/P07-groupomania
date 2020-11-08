@@ -1,3 +1,6 @@
+//ESLint est un outil linting utility pour le JavaScript.
+//Par cela on entend un outil qui analyse un code pour trouver les potentielles erreurs pouvant introduire des bug
+
 module.exports = {
   root: true,
   env: {

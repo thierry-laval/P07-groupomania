@@ -1,3 +1,4 @@
+<!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
 <!-- COMPONENT NAVLOGIN - Nav et Header des pages login et signup -->
 
 <template>

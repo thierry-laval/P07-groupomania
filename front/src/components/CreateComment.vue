@@ -1,3 +1,4 @@
+<!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
 <!-- COMPONENT CREATECOMMENT - Création d'un commentaire -->
 
 <template>

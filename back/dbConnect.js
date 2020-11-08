@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
+
 // MODULES
 const mysql = require('mysql');
 const env = require('./environment'); // Récupère les variables d'environnement
