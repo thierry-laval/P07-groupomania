@@ -40,3 +40,4 @@ TOKEN=Ce_que_vous_voulez
 - Puis créez la base de donnée avec le fichier *createDatabse.sql*
 - Se connecter a MySQL
 - Lancer l'application sur le port indiqué (localhost:8080)
+
