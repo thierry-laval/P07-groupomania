@@ -1,4 +1,4 @@
-### Auteur
+# Auteur
 
 👤**Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<thierrylaval@gmx.com>)
 
