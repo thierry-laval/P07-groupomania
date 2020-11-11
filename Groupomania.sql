@@ -99,6 +99,7 @@ CREATE TABLE `User` (
   `lastName` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `pseudo` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `role` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `bio` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `avatarUrl` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'http://localhost:3000/images/avatarDefault.jpg',
   `dateCreation` datetime NOT NULL,
