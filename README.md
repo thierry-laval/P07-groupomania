@@ -89,6 +89,11 @@ Dossier source/Groupomania.sql
 
 * Ouvrez votre navigateur et allez sur : [`http://localhost:8080`](http://localhost:8080)
 
+#### Administrateur/Modérateur
+
+* Pour administrer les posts, un role de modérateur est attribué au premier compte créer. Il pourra être changer vis la bd sql.
+  * Dans le cadres de l'utilisation de la bd ```Groupomania.sql``` (avec les exemples déja préts) le compte thierrylaval@groupomania.com est administrateur.
+
 ***
 
 ### Utilisé dans ce projet
@@ -122,8 +127,8 @@ Dossier source/Groupomania.sql
 
 → **Liste des dépendances et documentations**
 
-|                                         |                                                       |
-|------------------------------------------------------------------|---------------------------------------------------------------------------|
+|                                                                   |                                                                          |
+|------------------------------------------------------------------ |--------------------------------------------------------------------------|
 | express : [d​ocumentation](https://www.npmjs.com/package/express)  | sequelize   : ​[d​ocumentation](https://www.npmjs.com/package/sequelize)   |
 | bcrypt  : [d​ocumentation](https://www.npmjs.com/package/bcrypt)   | jsonwebtoken: [d​ocumentation](https://www.npmjs.com/package/jsonwebtoken)|
 | dotenv  : [d​ocumentation](https://www.npmjs.com/package/dotenvh)  | body-parser : ​[d​ocumentation](https://www.npmjs.com/package/body-parser) |
@@ -143,4 +148,3 @@ Dossier source/Groupomania.sql
 ***
 
 &hearts;&nbsp;&nbsp;&nbsp;&nbsp;Love Markdown
-
