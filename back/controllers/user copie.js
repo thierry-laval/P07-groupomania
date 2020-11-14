@@ -1,5 +1,5 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
-/*jshint esversion: 6 */
+
 // MODULES
 const mysql = require('../dbConnect').connection; //Connexion à la bd
 const env = require("../environment"); // Récupère les variables d'environnement
@@ -9,44 +9,28 @@ const fs = require("fs"); // Permet de gérer les fichiers stockés
 // FIN MODULES
 
 // MIDDLEWARE SIGNUP  - Inscription de l'utilisateur et hashage du mot de passe
-// Déclaration du premier inscrit comme ADMIN et des suivants en USER
-
 exports.signup = (req, res, next) => {
-    const sqlIfIsAtLeastOneUser = "SELECT * FROM User";
-    var roleDB = '';
-    mysql.query(sqlIfIsAtLeastOneUser, function (err, result) {
-        if (err) {
-            return res.status(500).json(err.message);
-        }
-        if (result.length == 0) {
-            return roleDB = 'admin';
-        } else {
-            return roleDB = 'user';
-        }
-    });
     bcrypt.hash(req.body.password, 10)
         .then(hash => {
             const email = req.body.email;
             const firstName = req.body.firstName;
             const lastName = req.body.lastName;
             const password = hash;
-            const role = roleDB;
 
             let sqlSignup;
             let values;
 
-            sqlSignup = "INSERT INTO user VALUES (NULL, ?, ?, ?, NULL, ?, ?, NULL, avatarUrl, NOW())";
-            values = [email, firstName, lastName, password, role];
+            sqlSignup = "INSERT INTO user VALUES (NULL, ?, ?, ?, NULL, ?, NULL, avatarUrl, NOW())";
+            values = [email, firstName, lastName, password,];
             mysql.query(sqlSignup, values, function (err, result) {
                 if (err) {
                     return res.status(500).json(err.message);
-                }
-                res.status(201).json({ message: "Utilisateur créé !" });
+                };
+                res.status(201).json({ message: "Utilisateur crée !" });
             });
         })
         .catch(e => res.status(500).json(e));
-};
-
+}
 // FIN MIDDLEWARE
 
 
@@ -60,7 +44,7 @@ exports.login = (req, res, next) => {
     mysql.query(sqlFindUser, [email], function (err, result) {
         if (err) {
             return res.status(500).json(err.message);
-        }
+        };
         if (result.length == 0) {
             return res.status(401).json({ error: "Utilisateur non trouvé !" });
         }
@@ -81,7 +65,7 @@ exports.login = (req, res, next) => {
             })
             .catch(e => res.status(500).json(e));
     });
-};
+}
 // FIN MIDDLEWARE
 
 // MIDDLEWARE DELETE pour supprimer un utilisateur
@@ -108,7 +92,7 @@ exports.delete = (req, res, next) => {
                 if (e) {
                     console.log(e);
                 }
-            });
+            })
         }
         passwordHashed = result[0].password;
 
@@ -121,7 +105,7 @@ exports.delete = (req, res, next) => {
                 mysql.query(sqlDeleteUser, [userID], function (err, result) {
                     if (err) {
                         return res.status(500).json(err.message);
-                    }
+                    };
                     if (result.affectedRows == 0) {
                         return res.status(400).json({ message: "Suppression échouée" });
                     }
@@ -130,7 +114,7 @@ exports.delete = (req, res, next) => {
             })
             .catch(e => res.status(500).json(e));
     });
-};
+}
 // FIN MIDDLEWARE
 
 // MIDDLEWARE PROFILE
@@ -149,13 +133,13 @@ exports.profile = (req, res, next) => {
     mysql.query(sqlGetUser, [userID, userIDAsked], function (err, result) {
         if (err) {
             return res.status(500).json(err.message);
-        }
+        };
         if (result.length == 0) {
             return res.status(400).json({ message: "Aucun utilisateur ne correspond à votre requête" });
         }
         res.status(200).json(result);
     });
-};
+}
 // FIN MIDDLEWARE
 
 // MIDDLEWARE MODIFY
@@ -187,15 +171,15 @@ exports.modify = (req, res, next) => {
                     mysql.query(sqlModifyUser, [avatarUrl, userID], function (err, result) {
                         if (err) {
                             return res.status(500).json(err.message);
-                        }
+                        };
                         return res.status(200).json({ message: "Utilisateur modifé !" });
                     });
-                });
+                })
             } else {
                 mysql.query(sqlModifyUser, [avatarUrl, userID], function (err, result) {
                     if (err) {
                         return res.status(500).json(err.message);
-                    }
+                    };
                     return res.status(200).json({ message: "Utilisateur modifé !" });
                 });
             }
@@ -253,6 +237,6 @@ exports.modify = (req, res, next) => {
                 .catch(e => res.status(500).json(e));
         });
     }
-};
+}
 
 // FIN MIDDLEWARE

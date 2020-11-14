@@ -1,18 +1,18 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
-
+/*jshint esversion: 6 */
 // Pour la configuration des routes
 
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Login from '../views/Login.vue'
-import Signup from '../views/Signup.vue'
-import Feed from '../views/Feed.vue'
-import FeedID from '../views/FeedID.vue'
-import Profile from '../views/Profile.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Login from '../views/Login.vue';
+import Signup from '../views/Signup.vue';
+import Feed from '../views/Feed.vue';
+import FeedID from '../views/FeedID.vue';
+import Profile from '../views/Profile.vue';
 
-Vue.use(VueRouter)
-
-  const routes = [
+Vue.use(VueRouter);
+//const mode = 'history';
+const routes = [
   {
     path: '/',
     name: 'Login',
@@ -38,10 +38,10 @@ Vue.use(VueRouter)
     name: 'Profile',
     component: Profile
   }
-]
+];
 
 const router = new VueRouter({
   routes
-})
+});
 
-export default router
+export default router;

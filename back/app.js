@@ -1,5 +1,5 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
-
+/*jshint esversion: 6 */
 // MODULES
 const express = require('express');
 const app = express();
@@ -27,7 +27,7 @@ app.use((req, res, next) => { // Evite les erreurs CORS
 // on indique les méthodes autorisées pour les requêtes HTTP
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
-  });
+});
 // FIN PARAMETRAGE
 
 // BODYPARSER
