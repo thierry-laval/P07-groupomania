@@ -11,7 +11,7 @@ import FeedID from '../views/FeedID.vue';
 import Profile from '../views/Profile.vue';
 
 Vue.use(VueRouter);
-//const mode = 'history';
+const mode = 'history';
 const routes = [
   {
     path: '/',
@@ -41,7 +41,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes
-});
+  routes, mode
+})
 
 export default router;

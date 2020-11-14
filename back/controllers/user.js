@@ -1,5 +1,6 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
 /*jshint esversion: 6 */
+/*jshint -W093 */
 // MODULES
 const mysql = require('../dbConnect').connection; //Connexion à la bd
 const env = require("../environment"); // Récupère les variables d'environnement
@@ -30,13 +31,12 @@ exports.signup = (req, res, next) => {
             const firstName = req.body.firstName;
             const lastName = req.body.lastName;
             const password = hash;
-            const role = roleDB;
 
             let sqlSignup;
             let values;
 
-            sqlSignup = "INSERT INTO user VALUES (NULL, ?, ?, ?, NULL, ?, ?, NULL, avatarUrl, NOW())";
-            values = [email, firstName, lastName, password, role];
+            sqlSignup = "INSERT INTO user VALUES (NULL, ?, ?, ?, NULL, ?, NULL, avatarUrl, NOW())";
+            values = [email, firstName, lastName, password,];
             mysql.query(sqlSignup, values, function (err, result) {
                 if (err) {
                     return res.status(500).json(err.message);
@@ -46,7 +46,6 @@ exports.signup = (req, res, next) => {
         })
         .catch(e => res.status(500).json(e));
 };
-
 // FIN MIDDLEWARE
 
 
@@ -144,7 +143,7 @@ exports.profile = (req, res, next) => {
         userIDAsked = userID;
     }
 
-    sqlGetUser = `SELECT email, firstName, lastName, pseudo, bio, avatarUrl, DATE_FORMAT(dateCreation, 'Inscrit depuis le %e %M %Y à %kh%i') AS dateCreation,
+    sqlGetUser = `SELECT email, firstName, lastName, pseudo, bio, avatarUrl, role, DATE_FORMAT(dateCreation, 'Inscrit depuis le %e %M %Y à %kh%i') AS dateCreation,
     COUNT(CASE WHEN userID = ? then 1 else null end) AS yourProfile FROM User WHERE userID = ?`;
     mysql.query(sqlGetUser, [userID, userIDAsked], function (err, result) {
         if (err) {

@@ -29,7 +29,17 @@
         :reaction="posts[indexLastPost].yourReaction"
       >
         <!-- Bouton suppréssion du post -->
-        <template v-slot:postDelete v-if="posts[indexLastPost].yourPost > 0">
+        <template v-slot:postDelete v-if="user.role == 'admin'">
+          <i
+            class="fas fa-times"
+            aria-hidden="true"
+            title="Supprimer le post"
+            role="button"
+            v-on:click="deletePost(posts[indexLastPost].postID)"
+          ></i>
+          <span class="sr-only">Supprimer le post</span>
+        </template>
+        <template v-slot:postDelete v-else-if="posts[indexLastPost].yourPost > 0">
           <i
             class="fas fa-times"
             aria-hidden="true"
@@ -177,6 +187,7 @@ export default {
       body: "", // Stock le corps du commentaire
       commentInputShow: false, // Défini si l'input de la création de commentaire doit être montré
       commentID: "", // Stock l'id du post pour lequel le commentaire sera envoyé
+      user: {},
     };
   },
   computed: {
@@ -209,6 +220,25 @@ export default {
         dataAlert.type = "";
         dataAlert.message = "";
       }, 4000);
+    },
+    getUser() {
+      // Récupère les infos de l'utilisateur
+      this.$axios
+        .get(`user/${this.$store.state.auth.user}/profile`)
+        .then((data) => {
+          this.user = data.data[0];
+        })
+        .catch((e) => {
+          if (e.response.status === 401) {
+            this.alertConstant("alert-danger mt-5", "Veuillez vous connecter");
+          }
+          if (e.response.status === 400) {
+            this.alertConstant("alert-warning mt-5", "Utilisateur non trouvé");
+          }
+          if (e.response.status === 500) {
+            this.alertConstant("alert-warning mt-5", "Erreur serveur");
+          }
+        });
     },
     get() {
       // Récupère le post et ses commentaires

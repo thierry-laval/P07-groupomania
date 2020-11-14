@@ -1,5 +1,5 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
-
+/*jshint esversion: 6 */
 // MODULES
 const mysql = require('../dbConnect').connection;
 const fs = require("fs"); // Permet de gérer les fichiers stockés
@@ -12,7 +12,7 @@ exports.getAllPosts = (req, res, next) => {
     let sqlGetPosts;
 
     sqlGetPosts = `SELECT Post.postID, post.userID, legend, gifUrl, DATE_FORMAT(post.dateCreation, 'le %e %M %Y à %kh%i') AS dateCreation, firstName, lastName, pseudo, avatarUrl,
-    COUNT(CASE WHEN reaction.reaction = 1 then 1 else null end) AS countUp, 
+    COUNT(CASE WHEN reaction.reaction = 1 then 1 else null end) AS countUp,
     COUNT(CASE WHEN reaction.reaction = -1 then 1 else null end) AS countDown,
     SUM(CASE WHEN reaction.userID = ? AND reaction.reaction = 1 then 1 WHEN reaction.userID = ? AND reaction.reaction = -1 then -1 else 0 end) AS yourReaction,
     COUNT(CASE WHEN Post.userID = ? then 1 else null end) AS yourPost
@@ -20,13 +20,13 @@ exports.getAllPosts = (req, res, next) => {
     mysql.query(sqlGetPosts, [userID, userID, userID], function (err, result) {
         if (err) {
             return res.status(500).json(err.message);
-        };
+        }
         if (result.length == 0) {
             return res.status(400).json({ message: "Aucun post à afficher !" });
         }
         res.status(200).json(result);
     });
-}
+};
 // FIN MIDDLEWARE
 
 // MIDDLEWARE GETONEPOST pour obtenir un message
@@ -45,13 +45,13 @@ exports.getOnePost = (req, res, next) => {
     mysql.query(sqlGetPost, [userID, userID, userID, postID, postID], function (err, result) {
         if (err) {
             return res.status(500).json(err.message);
-        };
+        }
         if (result.length == 0) {
             return res.status(400).json({ message: "Aucun post à afficher !" });
         }
         res.status(200).json(result);
     });
-}
+};
 // FIN MIDDLEWARE
 
 // MIDDLEWARE CREATEPOST pour céer les messages
@@ -60,7 +60,7 @@ exports.createPost = (req, res, next) => {
     const legend = req.body.legend;
     const gifUrl = `${req.protocol}://${req.get("host")}/images/${req.file.filename}`;
     console.log(gifUrl);
-    console.log(req.file.filename)
+    console.log(req.file.filename);
 
     let sqlCreatePost;
     let values;
@@ -70,10 +70,10 @@ exports.createPost = (req, res, next) => {
     mysql.query(sqlCreatePost, values, function (err, result) {
         if (err) {
             return res.status(500).json(err.message);
-        };
+        }
         res.status(201).json({ message: "Post crée !" });
     });
-}
+};
 // FIN MIDDLEWARE
 
 // MIDDLEWARE DELETEPOST pour supprimer les messages
@@ -93,26 +93,26 @@ exports.deletePost = (req, res, next) => {
                 mysql.query(sqlDeletePost, [userID, postID], function (err, result) {
                     if (err) {
                         return res.status(500).json(err.message);
-                    };
+                    }
                     res.status(200).json({ message: "Post supprimé !" });
                 });
-            })
+            });
         } else {
             sqlDeletePost = "DELETE FROM Post WHERE userID = ? AND postID = ?";
             mysql.query(sqlDeletePost, [userID, postID], function (err, result) {
                 if (err) {
                     return res.status(500).json(err.message);
-                };
+                }
                 res.status(200).json({ message: "Post supprimé !" });
             });
         }
         if (err) {
             return res.status(500).json(err.message);
-        };
+        }
 
 
     });
-}
+};
 // FIN MIDDLEWARE
 
 // MIDDLEWARE CREATECOMMENT pour créer des commentaires
@@ -129,10 +129,10 @@ exports.createComment = (req, res, next) => {
     mysql.query(sqlCreateComment, values, function (err, result) {
         if (err) {
             return res.status(500).json(err.message);
-        };
+        }
         res.status(201).json({ message: "Commentaire crée !" });
     });
-}
+};
 // FIN MIDDLEWARE
 
 // MIDDLEWARE REACTPOST pour créer une réaction sur les messages
@@ -144,14 +144,14 @@ exports.reactPost = (req, res, next) => {
     let sqlReaction;
     let values;
 
-    sqlReaction = `INSERT INTO Reaction VALUES (?, ?, ?, NOW()) ON DUPLICATE KEY UPDATE reaction = ?`
+    sqlReaction = `INSERT INTO Reaction VALUES (?, ?, ?, NOW()) ON DUPLICATE KEY UPDATE reaction = ?`;
     values = [userID, postID, reaction, reaction];
     mysql.query(sqlReaction, values, function (err, result) {
         if (err) {
             return res.status(500).json(err.message);
-        };
+        }
         res.status(201).json({ message: "Reaction créee !" });
     });
-}
+};
 
 // FIN MIDDLEWARE

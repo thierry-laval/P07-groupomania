@@ -195,6 +195,21 @@
       "title": "Administrateur/Modérateur"
     },
     {
+      "file": "front/src/views/Feed.vue",
+      "line": 47,
+      "description": "Permettre a l'admin de supprimer les post des user"
+    },
+    {
+      "file": "front/src/views/FeedID.vue",
+      "line": 42,
+      "description": "Bouton de suppréssion du post par l'admin"
+    },
+    {
+      "file": "front/src/views/FeedID.vue",
+      "line": 225,
+      "description": "Récupère les infos de l'utilisateur"
+    },
+    {
       "file": "back/controllers/user.js",
       "line": 35,
       "description": "Le Middlewares LOGIN permet de vérifier si l'utilisateur existe dans la base MySQL lors du login, si oui il vérifie son mot de passe,,s'il est bon il renvoie un TOKEN content l'id de l'utilisateur, sinon il renvoie une erreur.\nSi le mot de passe est correct, création du token de session avec code de salage protégé par token et expiration sur 24h\n        //Le serveur backend renvoie un token au frontend\n        //Encode un nouveau token avec une chaine de développement temporaire\n        //Encodage de l'userdID nécéssaire dans le cas où une requête transmettrait un userId (ex: modification d'un post)\n        // Clé d'encodage du token pouvant être rendue plus complexe en production\n",
