@@ -172,7 +172,7 @@ export default {
     getUser() {
       // Récupère les infos de l'utilisateur
       this.$axios
-        .get("user/role")
+        .get("role")
         .then((data) => {
           this.userRole = data.role;
         })
