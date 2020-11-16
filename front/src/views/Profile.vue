@@ -11,6 +11,7 @@
       <!-- Navigation -->
       <NavFeed />
       <!-- Fin -->
+
       <!-- Form pour update le profil si c'est notre profil -->
       <section class="border-bottom" v-if="user.yourProfile === 1">
         <h2

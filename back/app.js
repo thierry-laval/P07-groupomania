@@ -1,5 +1,6 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
 /*jshint esversion: 6 */
+
 // MODULES
 const express = require('express');
 const app = express();

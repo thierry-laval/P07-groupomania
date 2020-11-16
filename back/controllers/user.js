@@ -1,6 +1,6 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
 /*jshint esversion: 6 */
-/*jshint -W093 */
+
 // MODULES
 const mysql = require('../dbConnect').connection; //Connexion à la bd
 const env = require("../environment"); // Récupère les variables d'environnement
@@ -10,21 +10,8 @@ const fs = require("fs"); // Permet de gérer les fichiers stockés
 // FIN MODULES
 
 // MIDDLEWARE SIGNUP  - Inscription de l'utilisateur et hashage du mot de passe
-// Déclaration du premier inscrit comme ADMIN et des suivants en USER
-
 exports.signup = (req, res, next) => {
-    const sqlIfIsAtLeastOneUser = "SELECT * FROM User";
-    var roleDB = '';
-    mysql.query(sqlIfIsAtLeastOneUser, function (err, result) {
-        if (err) {
-            return res.status(500).json(err.message);
-        }
-        if (result.length == 0) {
-            return roleDB = 'admin';
-        } else {
-            return roleDB = 'user';
-        }
-    });
+
     bcrypt.hash(req.body.password, 10)
         .then(hash => {
             const email = req.body.email;
@@ -252,6 +239,21 @@ exports.modify = (req, res, next) => {
                 .catch(e => res.status(500).json(e));
         });
     }
+};
+
+exports.role = (req, res, next) => {
+    const userID = res.locals.userID;
+
+    sqlFindUser = "SELECT role FROM User WHERE userID = ?";
+    mysql.query(sqlFindUser, [userID], function (err, result) {
+        if (err) {
+            return res.status(500).json(err.message);
+        }
+        if (result.length == 0) {
+            return res.status(401).json({ error: "Utilisateur non trouvé !" });
+        }
+       return res.status(200).json(result);
+    });
 };
 
 // FIN MIDDLEWARE

@@ -1,5 +1,6 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
 /*jshint esversion: 6 */
+
 // Pour la configuration des routes
 
 import Vue from 'vue';
@@ -42,6 +43,6 @@ const routes = [
 
 const router = new VueRouter({
   routes, mode
-})
+});
 
 export default router;

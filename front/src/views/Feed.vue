@@ -21,6 +21,7 @@
         :alertMessage="alert.message"
       />
       <!-- Fin -->
+
       <!-- Post -->
       <Post
         v-for="post in posts"
@@ -34,7 +35,7 @@
         :reaction="post.yourReaction"
       >
         <!-- Bouton de suppréssion du post -->
-        <template v-slot:postDelete v-if="user.role == 'admin'">
+        <template v-slot:postDelete v-if="userRole == 'admin'">
           <i
             class="fas fa-times"
             aria-hidden="true"
@@ -144,7 +145,7 @@ export default {
       body: "", // Stock le corps du commentaire
       commentInputShow: false, // Défini si l'input de la création de commentaire doit être montré
       commentID: "", // Stock l'id du post pour lequel le commentaire sera envoyé
-      user: {},
+      userRole: "",
     };
   },
   methods: {
@@ -171,9 +172,9 @@ export default {
     getUser() {
       // Récupère les infos de l'utilisateur
       this.$axios
-        .get(`user/${this.$store.state.auth.user}/profile`)
+        .get("user/role")
         .then((data) => {
-          this.user = data.data[0];
+          this.userRole = data.role;
         })
         .catch((e) => {
           if (e.response.status === 401) {

@@ -1,4 +1,5 @@
 // Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval
+/*jshint esversion: 6 */
 
 // MODULES - Routeur Express
 const express = require("express");
@@ -19,6 +20,7 @@ router.post("/signup", userCtrl.signup);
 router.post("/login", userCtrl.login);
 router.delete("/delete", auth, userCtrl.delete);
 router.get("/:id/profile", auth, userCtrl.profile);
+router.get("/role", userCtrl.role);
 router.put("/modify", auth, multer, userCtrl.modify);
 // ROUTE
 

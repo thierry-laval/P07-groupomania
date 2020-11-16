@@ -85,6 +85,7 @@
         <!-- Corps du post -->
         <template v-slot:postLegend>{{ posts[indexLastPost].legend }}</template>
         <!-- Fin -->
+
         <!-- Création d'un commentaire -->
         <template v-slot:createComment>
           <CreateComment
