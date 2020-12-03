@@ -29,7 +29,7 @@
         :reaction="posts[indexLastPost].yourReaction"
       >
         <!-- Bouton suppréssion du post -->
-        <template v-slot:postDelete v-if="user.role == 'admin'">
+        <template v-slot:postDelete v-if="userIsAdmin == true">
           <i
             class="fas fa-times"
             aria-hidden="true"
@@ -188,7 +188,7 @@ export default {
       body: "", // Stock le corps du commentaire
       commentInputShow: false, // Défini si l'input de la création de commentaire doit être montré
       commentID: "", // Stock l'id du post pour lequel le commentaire sera envoyé
-      user: {},
+      userIsAdmin: false,
     };
   },
   computed: {
@@ -222,12 +222,14 @@ export default {
         dataAlert.message = "";
       }, 4000);
     },
-    getUser() {
+    getUserRole() {
       // Récupère les infos de l'utilisateur
       this.$axios
-        .get(`user/${this.$store.state.auth.user}/profile`)
+        .get("user/role")
         .then((data) => {
-          this.user = data.data[0];
+          if (data.role == 'admin'){
+            this.userIsAdmin = true;
+          }
         })
         .catch((e) => {
           if (e.response.status === 401) {
@@ -320,6 +322,7 @@ export default {
   },
   mounted() {
     // Récupère le post et ses commentaires et défini le titre
+    this.getUserRole();
     this.get();
     document.title = "Post | Groupomania";
   },
