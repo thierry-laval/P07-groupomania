@@ -60,31 +60,31 @@ la modification suit.
 
   0. Définitions.
 
-  «Cette licence» fait référence à la version 3 de la licence publique générale GNU Affero.
+  "Cette licence" fait référence à la version 3 de la licence publique générale GNU Affero.
 
-  «Copyright» désigne également les lois similaires au droit d'auteur qui s'appliquent à d'autres types de
+  "Copyright" désigne également les lois similaires au droit d'auteur qui s'appliquent à d'autres types de
 fonctionne, comme les masques semi-conducteurs.
 
-  «Le programme» fait référence à toute œuvre sous copyright sous licence
-Licence. Chaque titulaire de licence est appelé «vous». "Licenciés" et
-Les «destinataires» peuvent être des individus ou des organisations.
+  "Le programme" fait référence à toute œuvre sous copyright sous licence
+Licence. Chaque titulaire de licence est appelé "vous". "Licenciés" et
+Les "destinataires" peuvent être des individus ou des organisations.
 
-  «Modifier» une œuvre signifie copier ou adapter tout ou partie de l'œuvre
+  "Modifier" une œuvre signifie copier ou adapter tout ou partie de l'œuvre
 d'une manière nécessitant une autorisation de copyright, autre que la réalisation d'un
-Copie exacte. Le travail qui en résulte est appelé une «version modifiée» du
+Copie exacte. Le travail qui en résulte est appelé une "version modifiée" du
 une œuvre antérieure ou une œuvre "basée sur" l'œuvre antérieure.
 
-  Une «œuvre couverte» désigne soit le programme non modifié, soit une œuvre
+  Une "œuvre couverte" désigne soit le programme non modifié, soit une œuvre
 sur le programme.
 
-  «Propager» une œuvre signifie faire quoi que ce soit qui, sans
+  "Propager" une œuvre signifie faire quoi que ce soit qui, sans
 autorisation, vous rendrait directement ou indirectement responsable de
 violation de la loi sur le droit d'auteur applicable, sauf son exécution sur un
 ordinateur ou modifier une copie privée. La propagation comprend la copie,
 distribution (avec ou sans modification), mise à disposition
 public et, dans certains pays, d’autres activités.
 
-  «Transmettre» une œuvre signifie tout type de propagation qui permet à d'autres
+  "Transmettre" une œuvre signifie tout type de propagation qui permet à d'autres
 les parties à faire ou à recevoir des copies. Simple interaction avec un utilisateur via
 un réseau informatique, sans transfert de copie, ne transmet pas.
 
@@ -100,10 +100,10 @@ menu, un élément important de la liste répond à ce critère.
   1. Code source.
 
   Le "code source" d'une œuvre désigne la forme préférée de l'œuvre
-pour y apporter des modifications. «Code objet» désigne tout non-source
+pour y apporter des modifications. "Code objet" désigne tout non-source
 forme d'une œuvre.
 
-  Une «interface standard» signifie une interface qui est soit un fonctionnaire
+  Une "interface standard" signifie une interface qui est soit un fonctionnaire
 norme définie par un organisme de normalisation reconnu ou, dans le cas
 interfaces spécifiées pour un langage de programmation particulier, celui qui
 est largement utilisé par les développeurs travaillant dans cette langue.
@@ -114,7 +114,7 @@ emballer un composant majeur, mais qui ne fait pas partie de ce composant majeur
 Composant, et (b) sert uniquement à permettre l'utilisation du travail avec ce
 Major Component, ou pour implémenter une Interface Standard pour laquelle un
 l'implémentation est accessible au public sous forme de code source. UNE
-«Composant majeur», dans ce contexte, signifie un élément essentiel majeur
+"Composant majeur", dans ce contexte, signifie un élément essentiel majeur
 (noyau, système de fenêtre, etc.) du système d'exploitation spécifique
 (le cas échéant) sur lequel s'exécute le travail exécutable, ou un compilateur utilisé pour
 produire le travail, ou un interpréteur de code objet utilisé pour l'exécuter.
@@ -282,12 +282,12 @@ de l'une de ces manières:
 à partir de la source correspondante en tant que bibliothèque système, il n'est pas nécessaire
 inclus dans la transmission du travail de code objet.
 
-  Un «produit utilisateur» est soit (1) un «produit de consommation», ce qui signifie tout
+  Un "produit utilisateur" est soit (1) un "produit de consommation", ce qui signifie tout
 les biens meubles corporels qui sont normalement utilisés à des fins personnelles, familiales,
 ou à des fins domestiques, ou (2) tout ce qui est conçu ou vendu pour incorporation
 dans un logement. Pour déterminer si un produit est un produit de consommation,
 les cas douteux seront résolus en faveur de la couverture. Pour un particulier
-produit reçu par un utilisateur particulier, «normalement utilisé» fait référence à un
+produit reçu par un utilisateur particulier, "normalement utilisé" fait référence à un
 utilisation typique ou courante de cette classe de produits, quel que soit le statut
 de l'utilisateur particulier ou de la manière dont l'utilisateur particulier
 utilise réellement, ou prévoit ou devrait utiliser, le produit. Un produit
@@ -295,7 +295,7 @@ est un produit de consommation, que le produit ait ou non une
 utilisations commerciales, industrielles ou non destinées aux consommateurs, sauf si ces utilisations représentent
 le seul mode d'utilisation significatif du produit.
 
-  «Informations d'installation» pour un produit utilisateur désigne toutes les méthodes,
+  "Informations d'installation" pour un produit utilisateur désigne toutes les méthodes,
 procédures, clés d'autorisation ou autres informations requises pour l'installation
 et exécuter des versions modifiées d'une œuvre couverte dans ce produit utilisateur à partir de
 une version modifiée de sa source correspondante. Les informations doivent
@@ -374,7 +374,7 @@ ce matériel) complètent les termes de cette licence par des termes:
     ces concédants et auteurs.
 
   Toutes les autres conditions supplémentaires non permissives sont considérées "plus loin
-restrictions »au sens de la section 10. Si le programme en tant que vous
+restrictions "au sens de la section 10. Si le programme en tant que vous
 reçu, ou une partie de celui-ci, contient un avis indiquant qu'il est
 régi par cette Licence avec un terme qui est un autre
 restriction, vous pouvez supprimer ce terme. Si un document de licence contient
@@ -480,7 +480,7 @@ propager le contenu de sa version contributrice.
   Dans les trois paragraphes suivants, une "licence de brevet" est tout
 accord ou engagement, quelle qu'en soit la dénomination, de ne pas faire valoir un brevet
 (comme une autorisation expresse de pratiquer un brevet ou un engagement de ne pas
-poursuite pour contrefaçon de brevet). «Accorder» une telle licence de brevet à un
+poursuite pour contrefaçon de brevet). "Accorder" une telle licence de brevet à un
 partie signifie conclure un tel accord ou s'engager à ne pas appliquer
 brevet contre la partie.
 
@@ -567,7 +567,7 @@ aborder de nouveaux problèmes ou préoccupations.
 
   Un numéro distinct est attribué à chaque version. Si la
 Le programme spécifie qu'une certaine version numérotée de GNU Affero General
-La licence publique «ou toute version ultérieure» s’applique à celle-ci, vous disposez de la
+La licence publique "ou toute version ultérieure" s’applique à celle-ci, vous disposez de la
 possibilité de suivre les termes et conditions soit celui numéroté
 version ou de toute version ultérieure publiée par le Logiciel Libre
 Fondation. Si le programme ne spécifie pas de numéro de version du
@@ -588,7 +588,7 @@ version ultérieure.
 
   IL N'Y A AUCUNE GARANTIE POUR LE PROGRAMME, DANS LA MESURE AUTORISÉE PAR
 LOI APPLICABLE. SAUF LORSQU'IL EST INDIQUÉ PAR L'ÉCRIT DU COPYRIGHT
-LES TITULAIRES ET / OU D'AUTRES PARTIES FOURNISSENT LE PROGRAMME «TEL QUEL» SANS GARANTIE
+LES TITULAIRES ET / OU D'AUTRES PARTIES FOURNISSENT LE PROGRAMME "TEL QUEL" SANS GARANTIE
 DE TOUT TYPE, EXPRIMÉ OU IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER,
 LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE ET D'ADÉQUATION À UN PARTICULIER
 OBJECTIF. TOUT LE RISQUE QUANT À LA QUALITÉ ET À LA PERFORMANCE DU PROGRAMME
@@ -650,12 +650,12 @@ Ajoutez également des informations sur la manière de vous contacter par courri
   Si votre logiciel peut interagir avec les utilisateurs à distance via un ordinateur
 réseau, vous devez également vous assurer qu'il permet aux utilisateurs de
 obtenir sa source. Par exemple, si votre programme est une application Web, son
-l'interface peut afficher un lien «Source» qui mène les utilisateurs vers une archive
+l'interface peut afficher un lien "Source" qui mène les utilisateurs vers une archive
 du code. Il existe de nombreuses façons de proposer la source et différentes
 les solutions seront meilleures pour différents programmes; voir la section 13 pour le
 exigences particulières.
 
   Vous devriez également trouver votre employeur (si vous travaillez en tant que programmeur) ou votre école,
-le cas échéant, signer une «clause de non-responsabilité de droits d'auteur» pour le programme, si nécessaire.
+le cas échéant, signer une "clause de non-responsabilité de droits d'auteur" pour le programme, si nécessaire.
 Pour plus d'informations à ce sujet, et comment appliquer et suivre la GNU AGPL, consultez
 <https://www.gnu.org/licenses/>.

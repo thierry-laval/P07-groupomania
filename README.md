@@ -13,7 +13,8 @@ _`Début de formation le 20/04/2020`_
 
 ## 📎 Projet 7 - Création d'un réseau social d’entreprise
 
-![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo-groupomania-red.png?raw=true)
+![left 100%](front/public/sharePic.png?raw=true)
+<!--Ancien logo modifié ![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo-groupomania-red.png?raw=true)-->
 
 Le projet 7 consiste à construire  (Frontend et Backend) un réseau social interne pour les employés de Groupomania. En utilisant une organisation "agile", nous avons "Carte blanche" avec quelques orientations et contraintes.
 
