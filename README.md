@@ -40,13 +40,14 @@ L'un des employés du groupe testera un MVP du produit avec une seule des deux f
 
 ### Pré requis
 
-* Cloner le repository : <https://github.com/thierry-laval/groupomania>
+* Cloner la branche "master" de ce dépôt github
 * Installer Node.js
 * Installer Vue.js
 * Installer MySQL
 
-La sauvegarde de la base de données ```createDatabase.sql```doit être importée
-
+Une des sauvegardes de base de données devra être importée
+```source/bd/createDatabase.sql``` - Sans exemple
+```source/bd/Groupomania.sql``` - Avec des exemples
 ### Lancement du Backend et Frontend
 
 * Dans le terminal, lancer les commandes suivantes sur chaques dossiers :
@@ -58,7 +59,7 @@ La sauvegarde de la base de données ```createDatabase.sql```doit être importé
 
 ***Pour tester les fonctionnalités de l'application voir les étapes suivantes :***
 
-* Créez un fichier nommé **```.env```** dans le dossier back.
+* Créez un fichier nommé **```.env```** dans le dossier back (Ou utiliser celui déja installé pour faciliter).
   * Insérer directement ces 3 variables d'environnements
 
 ```bash
@@ -70,16 +71,16 @@ DTOKEN=Ce_que_vous_voulez
 * Puis créez la base de données avec le fichier **createDatabse.sql**
 
 ```bash
-Dossier source/createDatabase.sql
+Dossier source/bd/createDatabase.sql
 ```
 
 * Ou utiliser la base de données avec les exemples **Groupomania.sql**
 
 ```bash
-Dossier source/Groupomania.sql
+Dossier source/bd/Groupomania.sql
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;Utilisateurs et publications inclus pour les tests.
+&nbsp;&nbsp;&nbsp;&nbsp; Dans ce cas, vous aurez des utilisateurs et des publications inclus pour les tests.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se connecter avec le login :
 
