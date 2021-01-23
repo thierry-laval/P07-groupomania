@@ -252,7 +252,7 @@ exports.role = (req, res, next) => {
         if (result.length == 0) {
             return res.status(401).json({ error: "Utilisateur non trouvé !" });
         }
-       return res.status(200).json(result);
+        return res.status(200).json(result);
     });
 };
 

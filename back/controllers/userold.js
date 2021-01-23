@@ -244,7 +244,7 @@ exports.modify = (req, res, next) => {
 exports.role = (req, res, next) => {
     const userID = res.locals.userID;
 
-    sqlFindUser = "SELECT role FROM User WHERE userID = 2";
+    sqlFindUser = "SELECT role FROM User WHERE userID = ?";
     mysql.query(sqlFindUser, [userID], function (err, result) {
         if (err) {
             return res.status(500).json(err.message);
@@ -252,7 +252,7 @@ exports.role = (req, res, next) => {
         if (result.length == 0) {
             return res.status(401).json({ error: "Utilisateur non trouvé !" });
         }
-        return res.status(200).json(result);
+       return res.status(200).json(result);
     });
 };
 

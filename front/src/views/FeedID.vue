@@ -29,7 +29,7 @@
         :reaction="posts[indexLastPost].yourReaction"
       >
         <!-- Bouton suppréssion du post -->
-        <template v-slot:postDelete v-if="userIsAdmin == true">
+        <template v-slot:postDelete v-if="userRole == 'admin'">
           <i
             class="fas fa-times"
             aria-hidden="true"
@@ -188,7 +188,7 @@ export default {
       body: "", // Stock le corps du commentaire
       commentInputShow: false, // Défini si l'input de la création de commentaire doit être montré
       commentID: "", // Stock l'id du post pour lequel le commentaire sera envoyé
-      userIsAdmin: false,
+      userRole: "",
     };
   },
   computed: {
@@ -227,9 +227,7 @@ export default {
       this.$axios
         .get("user/role")
         .then((data) => {
-          if (data.role == 'admin'){
-            this.userIsAdmin = true;
-          }
+          this.userRole = data.data[0].role;
         })
         .catch((e) => {
           if (e.response.status === 401) {
@@ -319,6 +317,9 @@ export default {
           });
       }
     },
+  },
+  created() {
+    this.getUserRole();
   },
   mounted() {
     // Récupère le post et ses commentaires et défini le titre
