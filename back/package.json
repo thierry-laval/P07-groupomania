@@ -16,7 +16,7 @@
     "glob-parent": "^6.0.2",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
-    "yargs-parser": "^20.2.9"
+    "yargs-parser": "^5.0.1"
   },
   "repository": {
     "type": "git",
