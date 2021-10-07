@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "braces": "^2.3.1"
   }
 }
