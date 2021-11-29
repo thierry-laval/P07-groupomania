@@ -32,6 +32,6 @@ DB_ID=adminP7\
 DB_PW=P7Groupomania\
 TOKEN=Ce_que_vous_voulez
 
-* Puis créez la base de donnée avec le fichier *createDatabse.sql*
+* Puis créez la base de donnée avec le fichier *createDatabase.sql*
 * Se connecter a MySQL
 * Lancer l'application sur le port indiqué (localhost:8080)

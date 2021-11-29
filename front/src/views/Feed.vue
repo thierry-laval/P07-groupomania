@@ -34,7 +34,7 @@
         v-on:reaction-none="sendReaction(post.postID, 0)"
         :reaction="post.yourReaction"
       >
-        <!-- Bouton de suppréssion du post -->
+        <!-- Bouton de suppression du post -->
         <template v-slot:postDelete v-if="userRole == 'admin'">
           <i
             class="fas fa-times"

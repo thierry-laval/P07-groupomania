@@ -2,7 +2,7 @@
 
 _`Début de formation le 20/04/2020`_
 
-### Auteur
+## Auteur
 
 👤**Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<thierrylaval@gmx.com>)
 
@@ -25,7 +25,7 @@ Le projet 7 consiste à construire  (Frontend et Backend) un réseau social inte
 
 L'un des employés du groupe testera un MVP du produit avec une seule des deux fonctions demandées.
 
-* <span style="color:green">Nous avons choisi de presenter " Pouvoir partager et commenter des gifs ".</span>
+* <span style="color:green">Nous avons choisi de présenter " Pouvoir partager et commenter des gifs ".</span>
 
 ### Objectifs et Compétences évalué
 
@@ -50,27 +50,28 @@ Une des sauvegardes de base de données devra être importée
 ```source/bd/createDatabase.sql``` - Sans exemple
 
 ```source/bd/Groupomania.sql``` - Avec des exemples
+
 ### Lancement du Backend et Frontend
 
-* Dans le terminal, lancer les commandes suivantes sur chaques dossiers :
+* Dans le terminal, lancer les commandes suivantes sur chaque dossier :
 
-|![icon du terminal](https://github.com/thierry-laval/archives/blob/master/images/terminal2.gif?raw=true)|Pour installer Node<br>(une seule fois)|Pour lancer le serveur|
+|![icône du terminal](https://github.com/thierry-laval/archives/blob/master/images/terminal2.gif?raw=true)|Pour installer Node<br>(une seule fois)|Pour lancer le serveur|
 |:-:|:-:|:-:|
 |Sur le dossier **Back** :|```npm install```|```npm start```|
 |Sur le dossier **Front** :|```npm install```|```npm run serve```|
 
 ***Pour tester les fonctionnalités de l'application voir les étapes suivantes :***
 
-* Créez un fichier nommé **```.env```** dans le dossier back (Ou utiliser celui déja installé pour faciliter).
+* Créez un fichier nommé **```.env```** dans le dossier back (Ou utiliser celui déjà installé pour faciliter).
   * Insérer directement ces 3 variables d'environnements
 
 ```bash
 DB_ID=adminP7\
 DDB_PW=P7Groupomania\
-DTOKEN=Ce_que_vous_voulez
+TOKEN=Ce_que_vous_voulez
 ```
 
-* Puis créez la base de données avec le fichier **createDatabse.sql**
+* Puis créez la base de données avec le fichier **createDatabase.sql**
 
 ```bash
 Dossier source/bd/createDatabase.sql
@@ -96,7 +97,7 @@ Dossier source/bd/Groupomania.sql
 #### Administrateur/Modérateur
 
 * Pour administrer les posts, un role de modérateur est attribué au premier compte créer. Il pourra être changer vis la bd sql.
-  * Dans le cadres de l'utilisation de la bd ```Groupomania.sql``` (avec les exemples déja préts) le compte thierrylaval@groupomania.com est administrateur.
+  * Dans le cadres de l'utilisation de la bd ```Groupomania.sql``` (avec les exemples déjà prêts) le compte thierrylaval@groupomania.com est administrateur.
 
 ***
 
@@ -105,7 +106,7 @@ Dossier source/bd/Groupomania.sql
 * Voir : [Le projet 7 "Groupomania" sur OpenClassrooms](https://openclassrooms.com/fr/paths/185/projects/677/assignment "Cliquez pour voir le projet")
 * Voir : [Les spécifications fonctionnelles donnée par le client](documents/spécifications_fonctionnelles.pdf)
 
-| Languages       | et              | outils             |
+| Langages       | et              | outils             |
 | :-------------: |:--------------: | :-----------------:|
 | HTML5           | Node.js         | Git/GitHub         |
 | CSS3            | Vue.js          | Visual Studio Code |
@@ -116,7 +117,7 @@ Dossier source/bd/Groupomania.sql
 
 ### 🚦Les documents de présentation de la soutenance
 
-→ [Voir le livrable vers le dépot Github](https://drive.google.com/file/d/1uRs-CGkFYUx9aoAnSZMdF7mUoGSN-t35/view?usp=sharing)\
+→ [Voir le livrable vers le dépôt Github](https://drive.google.com/file/d/1uRs-CGkFYUx9aoAnSZMdF7mUoGSN-t35/view?usp=sharing)\
 → [Voir les spécifications fonctionnelles](https://drive.google.com/file/d/1ogmYbvEXu72UdZ3kIGqS7rJgWEMv30YE/view?usp=sharing)\
 → [Voir le cahier des charges](https://drive.google.com/file/d/1dLUPhbu7G1aJtyz3LPYVS6XStUyvMCpL/view?usp=sharing)\
 → [Voir l'organisation de la base de données MySQL](https://drive.google.com/file/d/1SNtf7pPg3a2kWflZROxpeMX-NJnrykRu/view?usp=sharing)\
@@ -133,20 +134,20 @@ Dossier source/bd/Groupomania.sql
 
 |                                                                   |                                                                          |
 |------------------------------------------------------------------ |--------------------------------------------------------------------------|
-| express : [d​ocumentation](https://www.npmjs.com/package/express)  | sequelize   : ​[d​ocumentation](https://www.npmjs.com/package/sequelize)   |
-| bcrypt  : [d​ocumentation](https://www.npmjs.com/package/bcrypt)   | jsonwebtoken: [d​ocumentation](https://www.npmjs.com/package/jsonwebtoken)|
-| dotenv  : [d​ocumentation](https://www.npmjs.com/package/dotenvh)  | body-parser : ​[d​ocumentation](https://www.npmjs.com/package/body-parser) |
-| helmet  : ​[d​ocumentation](https://www.npmjs.com/package/helmet)   | nodemon     : ​[d​ocumentation](https://www.npmjs.com/package/nodemon)     |
+| express : [documentation](https://www.npmjs.com/package/express)  | sequelize   : ​[documentation](https://www.npmjs.com/package/sequelize)   |
+| bcrypt  : [​documentation](https://www.npmjs.com/package/bcrypt)   | jsonwebtoken: [​documentation](https://www.npmjs.com/package/jsonwebtoken)|
+| dotenv  : [documentation](https://www.npmjs.com/package/dotenvh)  | body-parser : ​[​documentation](https://www.npmjs.com/package/body-parser) |
+| helmet  : ​[documentation](https://www.npmjs.com/package/helmet)   | nodemon     : ​[documentation](https://www.npmjs.com/package/nodemon)     |
 
 <!--
-● express     : [d​ocumentation](https://www.npmjs.com/package/express)\
-● sequelize   : ​[d​ocumentation](https://www.npmjs.com/package/sequelize)\
-● bcrypt      : [d​ocumentation](https://www.npmjs.com/package/bcrypt)\
-● jsonwebtoken: [d​ocumentation](https://www.npmjs.com/package/jsonwebtoken)\
-● dotenv      : [d​ocumentation](https://www.npmjs.com/package/dotenvh)\
-● body-parser : ​[d​ocumentation](https://www.npmjs.com/package/body-parser)\
-● helmet      : ​[d​ocumentation](https://www.npmjs.com/package/helmet)\
-● nodemon     : ​[d​ocumentation](https://www.npmjs.com/package/nodemon)\
+● express     : [documentation](https://www.npmjs.com/package/express)\
+● sequelize   : ​[documentation](https://www.npmjs.com/package/sequelize)\
+● bcrypt      : [documentation](https://www.npmjs.com/package/bcrypt)\
+● jsonwebtoken: [documentation](https://www.npmjs.com/package/jsonwebtoken)\
+● dotenv      : [d​documentation](https://www.npmjs.com/package/dotenvh)\
+● body-parser : ​[documentation](https://www.npmjs.com/package/body-parser)\
+● helmet      : ​[documentation](https://www.npmjs.com/package/helmet)\
+● nodemon     : ​[documentation](https://www.npmjs.com/package/nodemon)\
 -->
 
 ***

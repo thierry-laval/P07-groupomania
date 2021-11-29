@@ -1,10 +1,10 @@
 <!-- Formation OpenClassrooms - Développeur Web - Projet 7 - Thierry Laval -->
 
-<!-- VIEW FEEDID - Page d'un post avec la navigation, le post et ses commentaires -->
+<!-- VIEW FEED ID - Page d'un post avec la navigation, le post et ses commentaires -->
 
 <template>
   <div>
-    <!-- Alert si l'user est non connecté -->
+    <!-- Alerte si l'user est non connecté -->
     <Alert v-if="!connected" :alertType="alert.type" :alertMessage="alert.message" />
     <!-- Fin -->
     <div v-else>
@@ -28,7 +28,7 @@
         v-on:reaction-none="sendReaction(posts[indexLastPost].postID, 0)"
         :reaction="posts[indexLastPost].yourReaction"
       >
-        <!-- Bouton suppréssion du post -->
+        <!-- Bouton suppression du post -->
         <template v-slot:postDelete v-if="userRole == 'admin'">
           <i
             class="fas fa-times"
